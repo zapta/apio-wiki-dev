@@ -8,7 +8,7 @@ Apio can be installed as a Pip package that relies on a Python installation, or 
 
 **Install**
 
-1. Run `python --version` and verify that it matches the [Apio system requirements](system-requirements).
+1. Run `python --version` and verify that it matches the [Apio system requirements](system-requirements.md).
 
 2. Install the latest Apio code by running the following command.
 

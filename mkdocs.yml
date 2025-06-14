@@ -4,15 +4,21 @@ site_name: Apio Docs
 # The temporary directory with the generated site.
 site_dir: _site
 
+extra_css:
+  - stylesheets/extra.css
+  
 # Theme.
 theme:
   # name: mkdocs
   # name: readthedocs
   name: material
 
-features:
+  features:
     - navigation.sections    # Enables second-level grouping
     - navigation.expand      # Expands all sections and subsections by default
+    - navigation.tabs
+
+
 
 # Navigation tree
 nav:
@@ -26,7 +32,7 @@ nav:
       - Migrating from Apio 0.x.x: migrating-from-apio-0xx.md
   - Apio Projects:
       - Project structure: project-structure.md
-      - apio.ini: project-file.md
+      - Project file apio.ini: project-file.md
   - FPGA Boards:
       - Supported boards: supported-boards.md
       - Supported FPGAs: supported-fpgas.md
