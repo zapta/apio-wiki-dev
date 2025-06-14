@@ -9,20 +9,22 @@
       
       
       
+        <link rel="prev" href="../migrating-from-apio-0xx/">
       
-        <link rel="next" href="quick-start/">
+      
+        <link rel="next" href="../supported-boards/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Apio Docs</title>
+        <title>apio.ini - Apio Docs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -41,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#the-apioini-project-file" class="md-skip">
           Skip to content
         </a>
       
@@ -76,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Apio Docs" class="md-header__button md-logo" aria-label="Apio Docs" data-md-component="logo">
+    <a href=".." title="Apio Docs" class="md-header__button md-logo" aria-label="Apio Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -96,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Apio Documentation
+              apio.ini
             
           </span>
         </div>
@@ -174,7 +176,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Apio Docs" class="md-nav__button md-logo" aria-label="Apio Docs" data-md-component="logo">
+    <a href=".." title="Apio Docs" class="md-nav__button md-logo" aria-label="Apio Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -189,32 +191,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Apio Documentation
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -225,44 +205,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -312,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="quick-start/" class="md-nav__link">
+      <a href="../quick-start/" class="md-nav__link">
         
   
   
@@ -335,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="video-tutorial/" class="md-nav__link">
+      <a href="../video-tutorial/" class="md-nav__link">
         
   
   
@@ -358,7 +300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="system-requirements/" class="md-nav__link">
+      <a href="../system-requirements/" class="md-nav__link">
         
   
   
@@ -381,7 +323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="python-based-installation/" class="md-nav__link">
+      <a href="../python-based-installation/" class="md-nav__link">
         
   
   
@@ -404,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="standalone-installation/" class="md-nav__link">
+      <a href="../standalone-installation/" class="md-nav__link">
         
   
   
@@ -427,7 +369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="migrating-from-apio-0xx/" class="md-nav__link">
+      <a href="../migrating-from-apio-0xx/" class="md-nav__link">
         
   
   
@@ -454,18 +396,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -481,7 +425,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Apio Projects
@@ -495,7 +439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Project-structure.md" class="md-nav__link">
+      <a href="../Project-structure.md" class="md-nav__link">
         
   
   
@@ -515,10 +459,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="project-file/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    apio.ini
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -529,6 +495,137 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-apio-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      The [apio] section
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The [apio] section">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-default-env-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      The default-env option
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-common-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      The [common] section
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-envname-sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      The [env:name] sections
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The [env:name] sections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-board-option-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      The board option (REQUIRED)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-default-testbench-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      The default-testbench option
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-defines-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      The defines option
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-format-verible-options-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      The format-verible-options option
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-programmer-cmd-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      The programmer-cmd option
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-top-module-option-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      The top-module option (REQUIRED)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-yosys-synth-extra-options-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      The yosys-synth-extra-options option
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -586,7 +683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="supported-boards/" class="md-nav__link">
+      <a href="../supported-boards/" class="md-nav__link">
         
   
   
@@ -609,7 +706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="supported-FPGAs.md" class="md-nav__link">
+      <a href="../supported-FPGAs.md" class="md-nav__link">
         
   
   
@@ -632,7 +729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="board-drivers/" class="md-nav__link">
+      <a href="../board-drivers/" class="md-nav__link">
         
   
   
@@ -655,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="custom-boards/" class="md-nav__link">
+      <a href="../custom-boards/" class="md-nav__link">
         
   
   
@@ -761,7 +858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-build/" class="md-nav__link">
+      <a href="../cmd-apio-build/" class="md-nav__link">
         
   
   
@@ -784,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-upload/" class="md-nav__link">
+      <a href="../cmd-apio-upload/" class="md-nav__link">
         
   
   
@@ -807,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-clean/" class="md-nav__link">
+      <a href="../cmd-apio-clean/" class="md-nav__link">
         
   
   
@@ -876,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-lint/" class="md-nav__link">
+      <a href="../cmd-apio-lint/" class="md-nav__link">
         
   
   
@@ -899,7 +996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-format/" class="md-nav__link">
+      <a href="../cmd-apio-format/" class="md-nav__link">
         
   
   
@@ -922,7 +1019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-sim/" class="md-nav__link">
+      <a href="../cmd-apio-sim/" class="md-nav__link">
         
   
   
@@ -945,7 +1042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-test/" class="md-nav__link">
+      <a href="../cmd-apio-test/" class="md-nav__link">
         
   
   
@@ -968,7 +1065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-report/" class="md-nav__link">
+      <a href="../cmd-apio-report/" class="md-nav__link">
         
   
   
@@ -991,7 +1088,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-graph/" class="md-nav__link">
+      <a href="../cmd-apio-graph/" class="md-nav__link">
         
   
   
@@ -1060,7 +1157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-create/" class="md-nav__link">
+      <a href="../cmd-apio-create/" class="md-nav__link">
         
   
   
@@ -1083,7 +1180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-preferences/" class="md-nav__link">
+      <a href="../cmd-apio-preferences/" class="md-nav__link">
         
   
   
@@ -1106,7 +1203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-packages/" class="md-nav__link">
+      <a href="../cmd-apio-packages/" class="md-nav__link">
         
   
   
@@ -1129,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-drivers/" class="md-nav__link">
+      <a href="../cmd-apio-drivers/" class="md-nav__link">
         
   
   
@@ -1152,7 +1249,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-devices/" class="md-nav__link">
+      <a href="../cmd-apio-devices/" class="md-nav__link">
         
   
   
@@ -1221,7 +1318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-boards/" class="md-nav__link">
+      <a href="../cmd-apio-boards/" class="md-nav__link">
         
   
   
@@ -1244,7 +1341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-fpgas/" class="md-nav__link">
+      <a href="../cmd-apio-fpgas/" class="md-nav__link">
         
   
   
@@ -1267,7 +1364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-examples/" class="md-nav__link">
+      <a href="../cmd-apio-examples/" class="md-nav__link">
         
   
   
@@ -1290,7 +1387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-info/" class="md-nav__link">
+      <a href="../cmd-apio-info/" class="md-nav__link">
         
   
   
@@ -1313,7 +1410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-raw/" class="md-nav__link">
+      <a href="../cmd-apio-raw/" class="md-nav__link">
         
   
   
@@ -1336,7 +1433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-api/" class="md-nav__link">
+      <a href="../cmd-apio-api/" class="md-nav__link">
         
   
   
@@ -1359,7 +1456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-upgrade/" class="md-nav__link">
+      <a href="../cmd-apio-upgrade/" class="md-nav__link">
         
   
   
@@ -1435,7 +1532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="using-examples/" class="md-nav__link">
+      <a href="../using-examples/" class="md-nav__link">
         
   
   
@@ -1458,7 +1555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="contributing-examples/" class="md-nav__link">
+      <a href="../contributing-examples/" class="md-nav__link">
         
   
   
@@ -1526,7 +1623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="command-line/" class="md-nav__link">
+      <a href="../command-line/" class="md-nav__link">
         
   
   
@@ -1549,7 +1646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="using-system-verilog/" class="md-nav__link">
+      <a href="../using-system-verilog/" class="md-nav__link">
         
   
   
@@ -1572,7 +1669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="using-testbenches/" class="md-nav__link">
+      <a href="../using-testbenches/" class="md-nav__link">
         
   
   
@@ -1640,7 +1737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="apio-repositories/" class="md-nav__link">
+      <a href="../apio-repositories/" class="md-nav__link">
         
   
   
@@ -1663,7 +1760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="developement-environment/" class="md-nav__link">
+      <a href="../developement-environment/" class="md-nav__link">
         
   
   
@@ -1686,7 +1783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="creating-apio-version/" class="md-nav__link">
+      <a href="../creating-apio-version/" class="md-nav__link">
         
   
   
@@ -1709,7 +1806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="creating-package-version/" class="md-nav__link">
+      <a href="../creating-package-version/" class="md-nav__link">
         
   
   
@@ -1846,7 +1943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="credits/" class="md-nav__link">
+      <a href="../credits/" class="md-nav__link">
         
   
   
@@ -1896,20 +1993,113 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#the-apio-section" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      The [apio] section
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The [apio] section">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-default-env-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      The default-env option
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-common-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      The [common] section
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#the-envname-sections" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      The [env:name] sections
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="The [env:name] sections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-board-option-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      The board option (REQUIRED)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-default-testbench-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      The default-testbench option
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-defines-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      The defines option
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-format-verible-options-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      The format-verible-options option
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-programmer-cmd-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      The programmer-cmd option
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-top-module-option-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      The top-module option (REQUIRED)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-yosys-synth-extra-options-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      The yosys-synth-extra-options option
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1929,21 +2119,142 @@
 
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+<p><img alt="" src="assets/apio-banner.svg" /></p>
+<h1 id="the-apioini-project-file">The <code>apio.ini</code> project file.</h1>
+<p>Every Apio project is required to have in its root directory a text 
+file named <code>apio.ini</code> that contains the project configuration. At 
+minimum, the file looks like the example below with a single <code>env</code>
+section and the require configuration options.</p>
+<pre><code>[env:default]
+board = alhambra-ii   ; Board id
+top-module = Main     ; Top Verilog module name
 </code></pre>
+<p>Below is a more complex <code>apio.ini</code> file that contains two <code>[env:name]</code> sections named <code>env1</code> and <code>env2</code>, a <code>[common]</code> section with settings that are shared by all envs, and an <code>[apio]</code> section the selects the <code>env2</code> as the default env.</p>
+<pre><code>; Optional [apio] section.
+[apio]
+default-env = env2
+
+; Optional [common] section.
+[common]
+board = alhambra-ii
+top-module = Main
+
+; Required first env section.
+[env:env1]
+default-testbench = main_tb.v
+
+; Optional additional env section(s).
+[env:env2]
+default-testbench = io_module_tb.v
+</code></pre>
+<p>At runtime, apio select the env to use based using the following rules in decreasing priorities:</p>
+<ol>
+<li>The value of the flag <code>--env</code>, if specified.</li>
+<li>The value of the <code>default-env</code> option in the <code>[apio]</code> section, if exists.</li>
+<li>The first env that is listed in <code>apio.ini</code>.</li>
+</ol>
+<p>When apio determines the env to use, it collects its options 
+from the <code>[common]</code> and the [env:name] section, with options in the <code>[env:name]</code> section
+having higher priority, and executes the command with the resolved set options.</p>
+<hr />
+<h2 id="the-apio-section">The <code>[apio]</code> section</h2>
+<p>The <code>[apio]</code> section is optional and currently supports the following options</p>
+<h4 id="the-default-env-option">The <code>default-env</code> option</h4>
+<p>This is an optional option that species the name of the default env. Without this option, the default option is the first one that is listed in <code>apio.ini</code>.</p>
+<pre><code>[apio]
+default-env = env2
+</code></pre>
+<hr />
+<h2 id="the-common-section">The <code>[common]</code> section</h2>
+<p>The <code>[common]</code> section is optional and supports any option that is also supported by the <code>[env:name]</code> sections. Any option defined in the <code>[common]</code> section will be shared by all <code>[env:name]</code> sections that do not explicitly define that option.</p>
+<hr />
+<h2 id="the-envname-sections">The <code>[env:name]</code> sections</h2>
+<p>The <code>[common]</code> section is optional and supports any option that is also
+supported by the <code>[env:name]</code> sections. Any option defined in the
+<code>[common]</code> section is shared by all <code>[env:name]</code> sections that do not
+explicitly define that option.</p>
+<blockquote>
+<p>A required option must appear in the <code>[env:name]</code> section, or in the <code>[env:common]</code> or in both.</p>
+<p>For projects with a single env, it's common to call it <code>[env:default]</code>.</p>
+</blockquote>
+<h4 id="the-board-option-required">The <code>board</code> option (REQUIRED)</h4>
+<p>The required <code>board</code> option specifies the ID of the board that is used in with this env.
+The board ID must be one of the board IDs that are listed by the command <code>apio boards</code> (e.g. <code>alhambra-ii</code>).</p>
+<pre><code>[env:default]
+board = alhambra-ii
+</code></pre>
+<p>Apio uses the board ID to determine information such as the FPGA part 
+number and the programmer command to use to upload the design to the 
+board.</p>
+<p>If your project contains a <code>boards.jsonc</code> file with custom board defintion, the 
+board ID must be from that file.</p>
+<h4 id="the-default-testbench-option">The <code>default-testbench</code> option</h4>
+<p>The optional <code>default-testbench</code> option is useful with Apio projects that contain more than one testbench and it allows to specify the testbench that <code>apio sim</code> should simulate by default if a no testbench is specified. The value of the option is the relative path
+to the testbench file from the project root dir.</p>
+<pre><code>[env:default]
+default-testbench = tests/main_tb.v
+</code></pre>
+<h4 id="the-defines-option">The <code>defines</code> option</h4>
+<p>The optional <code>defines</code> option allows to specify Verilog macros that are passed 
+to verilog parsers such as Yosys and Iverilog.</p>
+<p>Each macro is specified in a separate lines and the marcors are passed to the
+Verilog parsers as '-D' command lines options. For example the marocs below 
+are passed as <code>-DDEBUG_MODE -D45</code>.</p>
+<pre><code>[env:default]
+defines =
+    DEBUG_MODE
+    SPEED=45
+</code></pre>
+<p>In the following example, the <code>defines</code> option is use to select the blinking rate in a project with two envs.</p>
+<pre><code>; Env for build with fast blink.
+[env:fast]
+defines =
+    CLK_DIV=3_000_000
+
+; Env for build with slow blink.
+[env:slow]
+defines =
+    CLK_DIV=12_000_000
+</code></pre>
+<h4 id="the-format-verible-options-option">The <code>format-verible-options</code> option</h4>
+<p>The optional 'format-verible-options' option allows to control the operation 
+of the <code>apio format</code> command by specifying additional options to the 
+underlying Verible formatter.</p>
+<pre><code>[env:default]
+format-verible-options =
+    --column_limit=80
+    --indentation_spaces=4
+</code></pre>
+<p>For the list of the Verible formatter options, run the command <code>apio 
+raw -- verible-verilog-format --helpfull</code></p>
+<h4 id="the-programmer-cmd-option">The <code>programmer-cmd</code> option</h4>
+<p>he optional 'programmer-cmd' option allows to override the programmer command 
+used by the <code>apio upload</code> command. It is intended for special cases and should be 
+avoided if possible.</p>
+<pre><code>[env:default]
+ programmer-cmd = iceprog -d i:0x${VID}:0x${PID} ${BIN_FILE}
+</code></pre>
+<blockquote>
+<p>The list of supported placeholders is available in the Apio
+standard boards definitions files <code>boards.jsonc</code>.</p>
+</blockquote>
+<h4 id="the-top-module-option-required">The <code>top-module</code> option (REQUIRED)</h4>
+<p>The optional <code>top-module</code> option specifies the name of the top module of the 
+design. </p>
+<pre><code>[env:default]
+top-module = Blinky
+</code></pre>
+<h4 id="the-yosys-synth-extra-options-option">The <code>yosys-synth-extra-options</code> option</h4>
+<p>The optional <code>yosys-synth-extra-options</code> option allows adding options to the 
+Yosys synth command used by the <code>apio build</code> command. In the example below, it adds the option <code>-dsp</code>, 
+which enables on some FPGAs the use of <code>DSP</code> cells to implement 
+multiply operations. This is an advanced option that is 
+typically not needed.</p>
+<pre><code>[env:default]
+yosys-synth-extra-options = -dsp
+</code></pre>
+<p><br></p>
+<p><img alt="" src="assets/fpgawars-banner.svg" /></p>
 
 
 
@@ -1992,10 +2303,10 @@ docs/
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>

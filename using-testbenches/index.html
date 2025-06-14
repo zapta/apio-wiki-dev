@@ -9,20 +9,22 @@
       
       
       
+        <link rel="prev" href="../using-system-verilog/">
       
-        <link rel="next" href="quick-start/">
+      
+        <link rel="next" href="../apio-repositories/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Apio Docs</title>
+        <title>Using testbenches - Apio Docs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -41,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#using-testbenches" class="md-skip">
           Skip to content
         </a>
       
@@ -76,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Apio Docs" class="md-header__button md-logo" aria-label="Apio Docs" data-md-component="logo">
+    <a href=".." title="Apio Docs" class="md-header__button md-logo" aria-label="Apio Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -96,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Apio Documentation
+              Using testbenches
             
           </span>
         </div>
@@ -174,7 +176,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Apio Docs" class="md-nav__button md-logo" aria-label="Apio Docs" data-md-component="logo">
+    <a href=".." title="Apio Docs" class="md-nav__button md-logo" aria-label="Apio Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -189,32 +191,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Apio Documentation
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -225,44 +205,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -312,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="quick-start/" class="md-nav__link">
+      <a href="../quick-start/" class="md-nav__link">
         
   
   
@@ -335,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="video-tutorial/" class="md-nav__link">
+      <a href="../video-tutorial/" class="md-nav__link">
         
   
   
@@ -358,7 +300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="system-requirements/" class="md-nav__link">
+      <a href="../system-requirements/" class="md-nav__link">
         
   
   
@@ -381,7 +323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="python-based-installation/" class="md-nav__link">
+      <a href="../python-based-installation/" class="md-nav__link">
         
   
   
@@ -404,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="standalone-installation/" class="md-nav__link">
+      <a href="../standalone-installation/" class="md-nav__link">
         
   
   
@@ -427,7 +369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="migrating-from-apio-0xx/" class="md-nav__link">
+      <a href="../migrating-from-apio-0xx/" class="md-nav__link">
         
   
   
@@ -495,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Project-structure.md" class="md-nav__link">
+      <a href="../Project-structure.md" class="md-nav__link">
         
   
   
@@ -518,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="project-file/" class="md-nav__link">
+      <a href="../project-file/" class="md-nav__link">
         
   
   
@@ -586,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="supported-boards/" class="md-nav__link">
+      <a href="../supported-boards/" class="md-nav__link">
         
   
   
@@ -609,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="supported-FPGAs.md" class="md-nav__link">
+      <a href="../supported-FPGAs.md" class="md-nav__link">
         
   
   
@@ -632,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="board-drivers/" class="md-nav__link">
+      <a href="../board-drivers/" class="md-nav__link">
         
   
   
@@ -655,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="custom-boards/" class="md-nav__link">
+      <a href="../custom-boards/" class="md-nav__link">
         
   
   
@@ -761,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-build/" class="md-nav__link">
+      <a href="../cmd-apio-build/" class="md-nav__link">
         
   
   
@@ -784,7 +726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-upload/" class="md-nav__link">
+      <a href="../cmd-apio-upload/" class="md-nav__link">
         
   
   
@@ -807,7 +749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-clean/" class="md-nav__link">
+      <a href="../cmd-apio-clean/" class="md-nav__link">
         
   
   
@@ -876,7 +818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-lint/" class="md-nav__link">
+      <a href="../cmd-apio-lint/" class="md-nav__link">
         
   
   
@@ -899,7 +841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-format/" class="md-nav__link">
+      <a href="../cmd-apio-format/" class="md-nav__link">
         
   
   
@@ -922,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-sim/" class="md-nav__link">
+      <a href="../cmd-apio-sim/" class="md-nav__link">
         
   
   
@@ -945,7 +887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-test/" class="md-nav__link">
+      <a href="../cmd-apio-test/" class="md-nav__link">
         
   
   
@@ -968,7 +910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-report/" class="md-nav__link">
+      <a href="../cmd-apio-report/" class="md-nav__link">
         
   
   
@@ -991,7 +933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-graph/" class="md-nav__link">
+      <a href="../cmd-apio-graph/" class="md-nav__link">
         
   
   
@@ -1060,7 +1002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-create/" class="md-nav__link">
+      <a href="../cmd-apio-create/" class="md-nav__link">
         
   
   
@@ -1083,7 +1025,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-preferences/" class="md-nav__link">
+      <a href="../cmd-apio-preferences/" class="md-nav__link">
         
   
   
@@ -1106,7 +1048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-packages/" class="md-nav__link">
+      <a href="../cmd-apio-packages/" class="md-nav__link">
         
   
   
@@ -1129,7 +1071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-drivers/" class="md-nav__link">
+      <a href="../cmd-apio-drivers/" class="md-nav__link">
         
   
   
@@ -1152,7 +1094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-devices/" class="md-nav__link">
+      <a href="../cmd-apio-devices/" class="md-nav__link">
         
   
   
@@ -1221,7 +1163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-boards/" class="md-nav__link">
+      <a href="../cmd-apio-boards/" class="md-nav__link">
         
   
   
@@ -1244,7 +1186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-fpgas/" class="md-nav__link">
+      <a href="../cmd-apio-fpgas/" class="md-nav__link">
         
   
   
@@ -1267,7 +1209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-examples/" class="md-nav__link">
+      <a href="../cmd-apio-examples/" class="md-nav__link">
         
   
   
@@ -1290,7 +1232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-info/" class="md-nav__link">
+      <a href="../cmd-apio-info/" class="md-nav__link">
         
   
   
@@ -1313,7 +1255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-raw/" class="md-nav__link">
+      <a href="../cmd-apio-raw/" class="md-nav__link">
         
   
   
@@ -1336,7 +1278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-api/" class="md-nav__link">
+      <a href="../cmd-apio-api/" class="md-nav__link">
         
   
   
@@ -1359,7 +1301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cmd-apio-upgrade/" class="md-nav__link">
+      <a href="../cmd-apio-upgrade/" class="md-nav__link">
         
   
   
@@ -1435,7 +1377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="using-examples/" class="md-nav__link">
+      <a href="../using-examples/" class="md-nav__link">
         
   
   
@@ -1458,7 +1400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="contributing-examples/" class="md-nav__link">
+      <a href="../contributing-examples/" class="md-nav__link">
         
   
   
@@ -1485,18 +1427,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -1512,7 +1456,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Apio Tips
@@ -1526,7 +1470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="command-line/" class="md-nav__link">
+      <a href="../command-line/" class="md-nav__link">
         
   
   
@@ -1549,7 +1493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="using-system-verilog/" class="md-nav__link">
+      <a href="../using-system-verilog/" class="md-nav__link">
         
   
   
@@ -1569,10 +1513,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="using-testbenches/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Using testbenches
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1583,6 +1549,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instructions-for-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructions for AI
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1640,7 +1635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="apio-repositories/" class="md-nav__link">
+      <a href="../apio-repositories/" class="md-nav__link">
         
   
   
@@ -1663,7 +1658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="developement-environment/" class="md-nav__link">
+      <a href="../developement-environment/" class="md-nav__link">
         
   
   
@@ -1686,7 +1681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="creating-apio-version/" class="md-nav__link">
+      <a href="../creating-apio-version/" class="md-nav__link">
         
   
   
@@ -1709,7 +1704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="creating-package-version/" class="md-nav__link">
+      <a href="../creating-package-version/" class="md-nav__link">
         
   
   
@@ -1846,7 +1841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="credits/" class="md-nav__link">
+      <a href="../credits/" class="md-nav__link">
         
   
   
@@ -1896,18 +1891,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#instructions-for-ai" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
+      Instructions for AI
     </span>
   </a>
   
@@ -1929,21 +1915,56 @@
 
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+<p><img alt="" src="assets/apio-banner.svg" /></p>
+<h1 id="using-testbenches">Using testbenches</h1>
+<p>Testbenches are non synthesizable Verilog files with the suffix <code>_tb.v</code> and System Verilog files with the suffix <code>_tb.sv</code> that are used to simulate and test the synthesizable modules of the project. Testbenches are used by the command <code>apio sim</code> for simulation with a graphical view of the signals and by <code>apio test</code> for a bulk test that none of the assertions in the testbenches fails.</p>
+<p>Testbenches files can be placed anywhere is the project directory tree, near the modules they tests, or in a separate directory that is dedicated for testing. When you run <code>apio sim</code> and view the results in GTKWave, it is recommended to save the GTKWave configuration in a <code>.gtkw</code> file with name of its testbench such that it will take affect next time you run <code>apio sim</code>.</p>
+<p>Apio defines the Verilog macro when running <code>apio sim</code> and doesn't define it when running <code>apio test</code>. This allow to condition calls to $fail such that the simulation exists with an error when run in batch mode using <code>apio test</code> but it continues and emits the wave file when run using <code>apio sim</code>.</p>
+<p>Make sure that your testbenches do not call <code>$fumpfile()</code> and to let Apio set the desire location for the generated signal files. Failing to do so may result in apio not be able to find the file when opening the GTKWave signal viewer or when cleaning the project.</p>
+<h2 id="instructions-for-ai">Instructions for AI</h2>
+<p>One way to write testbenches is to feed the tested module and instructions to an AI engine and ask it to generate the testbench code. The rules below can be copy/paste into the AI prompt to let it know of Apio's requirements.</p>
+<blockquote>
+<p>Apio testbench rules
+* Rule 1: Use $dumpvars() with the testbench module name as an argument.
+* Rule 2: Do not use $dumpfile().
+* Rule 3: Compare expected values to actual values and if they don't match, print an error message and call $fatal to exit.
+* Rule 4: Anytime you call $fatal in the testbench, first test the condition `ifndef INTERACTIVE_SIM, skip $fatal if the condition is false. 
+* Rule 5: At the end of the testbench print the message "End of simulation".
+* Rule 6: Create in the testbench a boolean signal called tb_error with the initial value of 0 and the comment "Set to high on first error" and set it to 1 each time an actual value doesn't match the expected value.</p>
+</blockquote>
+<p>Example, giving this module text to ChatGPT, together with the rules</p>
+<pre><code>module Main #(
+    parameter integer N = 3_000_000
+) (
+    input  CLK,        // 12MHz clock
+    output [7:0] ROWS, // LED rows
+    output [3:0] COLS  // LED columns
+);
+
+  reg [31:0] counter = 0;
+
+  reg toggle = 0;
+
+  // Rows and columns are active low.
+  assign ROWS = {6'b111111, toggle, ~toggle};
+  assign COLS = 4'b1110;
+
+  always @(posedge CLK) begin
+    if (counter &gt;= N - 1) begin
+      counter &lt;= 0;
+      toggle &lt;= !toggle;
+    end else begin
+      counter &lt;= counter + 1;
+    end
+  end
+
+endmodule
 </code></pre>
+<p>The provided testbench.</p>
+<pre><code>
+</code></pre>
+<p><br></p>
+<p><img alt="" src="assets/fpgawars-banner.svg" /></p>
 
 
 
@@ -1992,10 +2013,10 @@ docs/
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
