@@ -7,7 +7,8 @@ site_dir: _site
 # Theme.
 theme:
   # name: mkdocs
-  name: readthedocs
+  # name: readthedocs
+  name: material
 
 # Navigation tree
 nav:
@@ -22,12 +23,12 @@ nav:
       - Migrating from Apio 0.x.x: migrating-from-apio-0xx.md
 
   - Apio Projects:
-      - Project structure: Project-structure.md
+      - Project structure: project-structure.md
       - apio.ini: project-file.md
 
   - FPGA Boards:
       - Supported boards: supported-boards.md
-      - Supported FPGAs: supported-FPGAs.md
+      - Supported FPGAs: supported-fpgas.md
       - Board drivers: board-drivers.md
       - Custom boards: custom-boards.md
 
