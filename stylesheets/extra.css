@@ -38,20 +38,31 @@
   border-right: 1px solid #f0f0f0 !important;
 }
 
-/* Make titles bold */
+/* Bold titles with dark gray color */
 .md-typeset h1,
 .md-typeset h2,
 .md-typeset h3,
 .md-typeset h4,
 .md-typeset h5,
 .md-typeset h6 {
-  font-weight: 700;  /* bold */
+  font-weight: 700;          /* bold */
+  color: #777777;            /* dark gray, not full black */
 }
 
 /* Make horizontal rules thicker and darker */
 .md-typeset hr {
   border: none;               /* Remove default border */
-  border-top: 2px solid #444; /* Darker, thicker top border */
+  border-top: 4px solid #cccccc; /* Darker, thicker top border */
   margin: 1.5em 0;            /* Optional: vertical spacing */
 }
 
+/* Bold text color */
+.md-typeset strong,
+.md-typeset b {
+  color: #777777;
+}
+
+/* Table header color */
+.md-typeset table th {
+  color: #777777 !important;
+}
