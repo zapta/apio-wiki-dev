@@ -16,8 +16,7 @@ features:
 
 # Navigation tree
 nav:
-  - Apio Documentation: index.md
-
+  - Home: index.md
   - Getting Started:
       - Quick start: quick-start.md
       - Video tutorial: video-tutorial.md
@@ -25,17 +24,14 @@ nav:
       - Python-based installation: python-based-installation.md
       - Standalone installation: standalone-installation.md
       - Migrating from Apio 0.x.x: migrating-from-apio-0xx.md
-
   - Apio Projects:
       - Project structure: project-structure.md
       - apio.ini: project-file.md
-
   - FPGA Boards:
       - Supported boards: supported-boards.md
       - Supported FPGAs: supported-fpgas.md
       - Board drivers: board-drivers.md
       - Custom boards: custom-boards.md
-
   - Apio Commands:
       - Build Commands:
           - apio build: cmd-apio-build.md
@@ -62,22 +58,18 @@ nav:
           - apio raw: cmd-apio-raw.md
           - apio api: cmd-apio-api.md
           - apio upgrade: cmd-apio-upgrade.md
-
   - Apio Examples:
       - Using examples: using-examples.md
       - Contributing examples: contributing-examples.md
-
   - Apio Tips:
       - Apio command line: command-line.md
       - Using System Verilog: using-system-verilog.md
       - Using testbenches: using-testbenches.md
-
   - Apio Development:
       - Apio repositories: apio-repositories.md
       - Development environment: developement-environment.md
       - Creating an Apio version: creating-apio-version.md
       - Creating a package version: creating-package-version.md
-
   - Help:
       - Apio home: https://github.com/FPGAwars/apio
       - Bugs and requests: https://github.com/FPGAwars/apio/issues
