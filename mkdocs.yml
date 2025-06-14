@@ -1,1 +1,10 @@
-site_name: My Docs
+# The project name.
+site_name: Apio Docs
+
+# The temporary directory with the generated site.
+site_dir: _site
+
+# Theme.
+theme:
+  # name: mkdocs
+  name: readthedocs
