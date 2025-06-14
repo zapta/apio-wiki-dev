@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Using testbenches
 
@@ -58,4 +58,3 @@ The provided testbench.
 
 <br>
 
-![](assets/fpgawars-banner.svg)

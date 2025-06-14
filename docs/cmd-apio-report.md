@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio report
 
@@ -44,4 +44,3 @@ Clock Information
 ```
 
 
-![](assets/fpgawars-banner.svg)

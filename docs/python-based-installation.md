@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Installing Apio as a Python Pip package
 
@@ -28,4 +28,4 @@ pip install --force-reinstall -U git+https://github.com/FPGAwars/apio.git@develo
 
 <br>
 
-![](assets/fpgawars-banner.svg)
+

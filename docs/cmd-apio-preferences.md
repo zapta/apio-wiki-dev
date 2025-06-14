@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio preferences
 
@@ -26,4 +26,3 @@ apio pref -t dark               # Using command shortcut.
 
 <br>
 
-![](assets/fpgawars-banner.svg)

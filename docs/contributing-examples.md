@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Contributing Apio examples
 
@@ -19,4 +19,4 @@ NOTES:
 
 <br>
 
-![](assets/fpgawars-banner.svg)
+

@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Migrating from Apio 0.x.x
 
@@ -48,4 +48,3 @@ The hierarchy and names of some Apio commands where changed in Apio 1.x.x and th
 
 <br>
 
-![](assets/fpgawars-banner.svg)

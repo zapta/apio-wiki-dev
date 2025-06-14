@@ -1,5 +1,3 @@
-![](assets/apio-banner.svg)
-
 # Apio build
 
 The command `apio build` processes the project’s synthesis source
@@ -35,6 +33,4 @@ apio build --verbose-pnr     # Verbose place and route info
   * To force a rebuild from scratch run `apio clean` first.
 
 
-<br>
 
-![](assets/fpgawars-banner.svg)

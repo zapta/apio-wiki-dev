@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio's Repositories
 
@@ -22,4 +22,4 @@ To simplify tracking and maintenance, we try to consolidate all the bug reports 
 
 <br>
 
-![](assets/fpgawars-banner.svg)
+

@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 <!-- BEGIN BOARDS.md -->
 
@@ -118,4 +118,3 @@
 <!-- END BOARDS.md -->
 
 
-![](assets/fpgawars-banner.svg)

@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio Developers Environment
 
@@ -78,4 +78,3 @@ Since Apio launches Scons as a subprocess, **debugging the Scons code require a 
 
 <br>
 
-![](assets/fpgawars-banner.svg)

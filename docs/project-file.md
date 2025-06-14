@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # The `apio.ini` project file.
 
@@ -194,4 +194,3 @@ yosys-synth-extra-options = -dsp
 ```
 <br>
 
-![](assets/fpgawars-banner.svg)

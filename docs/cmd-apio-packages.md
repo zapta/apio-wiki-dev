@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio packages
 
@@ -80,4 +80,3 @@ apio packages list
 
 <br>
 
-![](assets/fpgawars-banner.svg)

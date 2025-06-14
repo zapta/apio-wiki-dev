@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio upload
 
@@ -30,4 +30,3 @@ Typically the simple form `apio upload` is sufficient to locate and program the 
 
 <br>
 
-![](assets/fpgawars-banner.svg)

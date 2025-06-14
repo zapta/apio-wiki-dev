@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio sim
 
@@ -44,4 +44,3 @@ Example sim results viewer:
 
 <br>
 
-![](assets/fpgawars-banner.svg)

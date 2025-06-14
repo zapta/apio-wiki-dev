@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio clean
 
@@ -18,4 +18,3 @@ apio clean -p /projects/blinky  # Project in another directory
 
 <br>
 
-![](assets/fpgawars-banner.svg)

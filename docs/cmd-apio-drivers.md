@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio drivers
 
@@ -95,4 +95,3 @@ apio drivers uninstall serial    # Uninstall the serial drivers.
 
 <br>
 
-![](assets/fpgawars-banner.svg)

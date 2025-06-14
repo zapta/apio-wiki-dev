@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 <!-- BEGIN FPGAS.md -->
 
@@ -121,4 +121,3 @@
 
 
 
-![](assets/fpgawars-banner.svg)

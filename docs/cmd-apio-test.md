@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio test
 
@@ -37,4 +37,3 @@ option.
 
 <br>
 
-![](assets/fpgawars-banner.svg)

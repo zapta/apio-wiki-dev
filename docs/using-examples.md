@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Using Apio's examples
 
@@ -61,4 +61,3 @@ The fetched example is now an Apio project which can be build and uploaded to a 
 
 <br>
 
-![](assets/fpgawars-banner.svg)

@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio create
 
@@ -26,4 +26,3 @@ complete and buildable project. To create a complete project, use the
 
 <br>
 
-![](assets/fpgawars-banner.svg)

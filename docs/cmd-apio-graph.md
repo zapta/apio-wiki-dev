@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio graph
 
@@ -38,4 +38,3 @@ Example `apio graph` generated graph:
 
 <br>
 
-![](assets/fpgawars-banner.svg)

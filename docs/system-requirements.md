@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio system requirements
 
@@ -35,4 +35,3 @@ These requirements are applicable only when installing Apio as a Pip package (Py
 
 <br>
 
-![](assets/fpgawars-banner.svg)

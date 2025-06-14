@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 ## Cutting a release candidate
 TBD
@@ -22,4 +22,3 @@ Things to pay attention to:
 
 <br>
 
-![](assets/fpgawars-banner.svg)

@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio devices
 
@@ -79,4 +79,3 @@ Example output
 
 <br>
 
-![](assets/fpgawars-banner.svg)

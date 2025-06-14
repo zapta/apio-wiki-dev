@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio format
 
@@ -52,4 +52,3 @@ page online or use the command `apio raw -- verible-verilog-format --helpful`.
 
 <br>
 
-![](assets/fpgawars-banner.svg)

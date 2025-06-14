@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio video tutorial
 
@@ -14,4 +14,3 @@
 
 <br>
 
-![](assets/fpgawars-banner.svg)

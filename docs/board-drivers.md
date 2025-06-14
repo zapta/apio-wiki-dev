@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # FPGA Board Drivers
 
@@ -22,4 +22,3 @@ Apio comes with two kinds of drivers called 'ftdi' and 'serial' and the table be
 
 <br>
 
-![](assets/fpgawars-banner.svg)

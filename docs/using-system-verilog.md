@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Using System Verilog
 
@@ -9,4 +9,3 @@ You can use System Verilog files your Apio project as you would use Verilog file
 
 <br>
 
-![](assets/fpgawars-banner.svg)

@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio quick start
 
@@ -141,4 +141,4 @@ This concludes the Apio quick start guide. We suggest to review the documentatio
 watch the tutorial videos in the [Video tutorial section](video-tutorial.md).
 
 
-![](assets/fpgawars-banner.svg)
+

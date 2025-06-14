@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio lint
 
@@ -26,4 +26,3 @@ apio lint --all
 
 <br>
 
-![](assets/fpgawars-banner.svg)

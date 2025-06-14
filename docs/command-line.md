@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio command line
 
@@ -70,4 +70,3 @@ Click's documentation at https://tinyurl.com/click-shell-completion.
 -----
 <br>
 
-![](assets/fpgawars-banner.svg)

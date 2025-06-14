@@ -1,4 +1,4 @@
-![](assets/apio-banner.svg)
+
 
 # Apio Project Structure
 
@@ -72,4 +72,3 @@ _build
 
 <br>
 
-![](assets/fpgawars-banner.svg)
