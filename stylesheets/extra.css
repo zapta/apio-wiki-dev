@@ -1,5 +1,57 @@
-/* Sidebar: Top-level nav items (first level) */
-.md-nav__item--section > .md-nav__link {
-  font-weight: bold;
-  color: #007acc;  /* blue */
+/* Reduce table padding. */
+.md-typeset table td,
+.md-typeset table th {
+  padding: 0.5em 0.5em !important;  /* smaller vertical and horizontal padding */
 }
+
+/* Set table font size to normal */
+.md-typeset table,
+.md-typeset table * {
+  font-size: inherit !important;
+}
+
+/* Style top-level sidebar items under active tab */
+.md-nav__item--section > .md-nav__link {
+  color: #d9534f !important;         /* Red text */
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
+/* Apply borders to all table cells */
+.md-typeset table td,
+.md-typeset table th {
+  border: 1px solid #ccc;
+}
+
+
+/* Lighten table borders */
+.md-typeset table,
+.md-typeset table th,
+.md-typeset table td {
+  border-color: #f0f0f0 !important; /* very light gray close to white */
+}
+
+/* Also for inner borders */
+.md-typeset table th,
+.md-typeset table td {
+  border-bottom: 1px solid #f0f0f0 !important;
+  border-right: 1px solid #f0f0f0 !important;
+}
+
+/* Make titles bold */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-weight: 700;  /* bold */
+}
+
+/* Make horizontal rules thicker and darker */
+.md-typeset hr {
+  border: none;               /* Remove default border */
+  border-top: 2px solid #444; /* Darker, thicker top border */
+  margin: 1.5em 0;            /* Optional: vertical spacing */
+}
+
