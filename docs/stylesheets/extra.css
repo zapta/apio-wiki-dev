@@ -57,17 +57,17 @@
 
 /* ## title size */
 .md-typeset h2 {
-  font-size: 1.3em;  /* Default is ~1.5em */
+  font-size: 1.2em;  /* Default is ~1.5em */
 }
 
 /* ### title size */
 .md-typeset h3 {
-  font-size: 1.2em;  /* Default is ~1.25em */
+  font-size: 1.1em;  /* Default is ~1.25em */
 }
 
 /* #### title size */
 .md-typeset h4 {
-  font-size: 1.1em;    /* Default is ~1.1em */
+  font-size: 1.0em;    /* Default is ~1.1em */
 }
 
 
