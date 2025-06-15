@@ -2,14 +2,24 @@
 
 ## Introduction
 
-Apio is an easy to install and use open source app that allows to develop FPGA designs with ease using simple commands such as `apio lint` to verify the code, `apio sim` to simulate the design, and `apio upload` to build the design and program the FPGA board. Apio runs on Mac OSX, Linux and Windows, and currently supports 3 FPGA architectures, 70+ FPGAs, 70+ FPGA boards, and growing.
+**Apio** is an easy-to-install, open-source application that simplifies FPGA development. It provides simple commands such as:
 
-The rest of this page, provides a showcase of a some of Apio's features which are covered in more details in the sections in the sidebar. After reviewing it, we recommend starting with the the [Quick start](Quick-start) section. 
+- `apio lint` – to verify the code  
+- `apio sim` – to simulate the design  
+- `apio upload` – to build the design and program the FPGA board  
 
+Apio runs on macOS, Linux, and Windows. It currently supports:
 
-> The examples here use the Alhambra-II FPGA board though other supported boards should work just the same.
+- 3 FPGA architectures  
+- 70+ FPGAs  
+- 70+ FPGA boards  
 
-> Some of logs in the examples below were truncated for clarity.
+…and the list continues to grow.
+
+This page offers a showcase of some of Apio's features, detailed further in the sidebar sections. After reviewing this introduction, we recommend starting with the [Quick start](Quick-start) section.
+
+> * The examples here use the Alhambra-II FPGA board, though other supported boards should work similarly. 
+> * Some logs in the examples below have been truncated for clarity.
 
 ## Apio project examples
 Currently there are 60+ project examples that are included with Apio. To list them, run the following command:
@@ -31,14 +41,14 @@ Apio Examples
 Total of 63 examples
 ```
 
-Let's fetch the `getting-started` of the `alhambra-ii` board.
+Let's fetch the `getting-started` example of the `alhambra-ii` board.
 
 ```
 $ mkdir example
 $ cd example
 
 # Fetch the example's files.
-example$ apio examples fetch "alhambra-ii/getting-started"
+example$ apio examples fetch alhambra-ii/getting-started
 
 # List the files.
 example$ tree .
@@ -50,7 +60,7 @@ example$ tree .
 └── pinout.pcf
 ```
 
-Now let's build the example and upload it to the FPGA goard.
+Now let's build the example program our Alhambra-II FPGA board.
 ```
 example$ apio upload
 ```
@@ -59,12 +69,10 @@ And Voilà! - the design is now running on the FPGA board.
 
 ## Analyzing utilization and speed.
 
-The command ``apio report`` analyzes and reports the FPGA utilization and the design's maximal speed.
+To check how many FPGA resources the design uses and how fast it can run, use the `apio report` command
 
 ```
 example$ apio report
-
-...
 
 FPGA Resource Utilization
 ┌────────────────┬────────┬──────────┬─────────┐
@@ -88,7 +96,7 @@ Clock Information
 
 ## Formatting the source code code.
 
-The ``apio format`` finds and formats all the project source files.
+Formatting the source code is as simple as running `apio format` command.
 
 ```
 work2$ apio format
@@ -129,7 +137,8 @@ work$ apio sim main_tb.v
 
 ## Testing the design
 
-The command `apio test` identifies and simulates in batch mode all all the testbenches in the design. The command succeeds if all the testbenches complete the simulation and fail if any of them exist a failed assertion with `$fatal`.
+The command `apio test` simulates all the testbenches in batch mode and fails if any of the assertions failed with
+a call to `$fatal`.
 
 ```
 work2$ apio test
@@ -141,7 +150,7 @@ main_tb.v:47: $finish called at 966000 (1ps)
 
 ## Commands help
 
-Every apio command access the `--help`` or -`h` flag which print a short description of the command. When a command has multiple level, the help flag can be used at any level, for example `apio -h`, `apio examples -h` and `apio examples list -h`. 
+Every apio command access the `--help` or -`h` flag which print a short description of the command. When a command has multiple level, the help flag can be used at any level, for example `apio -h`, `apio examples -h` and `apio examples list -h`. 
 
 ```
 $$ apio clean -h
