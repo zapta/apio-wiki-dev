@@ -6,26 +6,11 @@ illustrates the relationship between these definitions and Apio's operation,
 as well as the names of their respective definition files located in the
 [Apio resources directory](https://github.com/FPGAwars/apio/tree/develop/apio/resources).
 
-```mermaid
-graph TD
-    fpga["FPGA Definition<br>(fpgas.jsonc)"]
-    programmer["Programmer Definition<br>(programmers.jsonc)"]
-    board["Board Definition<br>(boards.jsonc)"]
-    synth["Synthesizing"]
-    prog["Programming"]
+<br>
 
-    fpga --> board
-    programmer --> board
-    board --> synth
-    board --> prog
-    synth --> prog
+![](assets/custom-boards.png)
 
-    style fpga       fill:#ffff33,rx:10,ry:10
-    style programmer fill:#ffff33,rx:10,ry:10
-    style board      fill:#ffff33,rx:10,ry:10
-    style synth      rx:10,ry:10
-    style prog       rx:10,ry:10
-```
+<br>
 
 If any of these default definitions do not match the FPGA board you are using,
 you can override them by placing custom definition files in the top-level
