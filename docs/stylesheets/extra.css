@@ -1,7 +1,9 @@
+/* Custom CSS definitions for Apio documentation. */
+
 /* Reduce table padding. */
 .md-typeset table td,
 .md-typeset table th {
-  padding: 0.5em 0.5em !important;  /* smaller vertical and horizontal padding */
+  padding: 0.5em 0.5em !important; /* smaller vertical and horizontal padding */
 }
 
 /* Set table font size to normal */
@@ -12,7 +14,7 @@
 
 /* Style top-level sidebar items under active tab */
 .md-nav__item--section > .md-nav__link {
-  color: #d9534f !important;         /* Red text */
+  color: #d9534f !important; /* Red text */
   font-weight: bold;
   font-size: 1.05em;
 }
@@ -22,7 +24,6 @@
 .md-typeset table th {
   border: 1px solid #ccc;
 }
-
 
 /* Lighten table borders */
 .md-typeset table,
@@ -45,15 +46,15 @@
 .md-typeset h4,
 .md-typeset h5,
 .md-typeset h6 {
-  font-weight: 700;          /* bold */
-  color: #777777;            /* dark gray, not full black */
+  font-weight: 700; /* bold */
+  color: #777777; /* dark gray, not full black */
 }
 
 /* Make horizontal rules thicker and darker */
 .md-typeset hr {
-  border: none;               /* Remove default border */
+  border: none; /* Remove default border */
   border-top: 4px solid #cccccc; /* Darker, thicker top border */
-  margin: 1.5em 0;            /* Optional: vertical spacing */
+  margin: 1.5em 0; /* Optional: vertical spacing */
 }
 
 /* Bold text color */
@@ -65,4 +66,13 @@
 /* Table header color */
 .md-typeset table th {
   color: #777777 !important;
+}
+
+/* Make the code block text more visible */
+.md-typeset pre code {
+  font-family: "JetBrains Mono", "Roboto Mono", "DejaVu Sans Mono",
+    "Courier New", Courier, monospace !important;
+  font-weight: 500;
+  color: #212121; /* Nearly black for high visibility */
+  background-color: #eeeeee; /* Maintain contrast */
 }
