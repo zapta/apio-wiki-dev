@@ -8,7 +8,7 @@ as well as the names of their respective definition files located in the
 
 <br>
 
-![](assets/custom-boards.png)
+![](assets/custom-boards.svg)
 
 <br>
 
