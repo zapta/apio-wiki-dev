@@ -50,6 +50,27 @@
   color: #777777; /* dark gray, not full black */
 }
 
+/* # title size */
+.md-typeset h1 {
+  font-size: 1.8em;  /* Default is ~1.8em, reduce as needed */
+}
+
+/* ## title size */
+.md-typeset h2 {
+  font-size: 1.3em;  /* Default is ~1.5em */
+}
+
+/* ### title size */
+.md-typeset h3 {
+  font-size: 1.2em;  /* Default is ~1.25em */
+}
+
+/* #### title size */
+.md-typeset h4 {
+  font-size: 1.1em;    /* Default is ~1.1em */
+}
+
+
 /* Make horizontal rules thicker and darker */
 .md-typeset hr {
   border: none; /* Remove default border */
