@@ -1,6 +1,6 @@
-# Apio Documentation
+#
 
-## Introduction
+![](assets/apio-illustration.png)
 
 **Apio** is an easy-to-install, open-source application that simplifies FPGA development. It provides simple commands such as:
 
@@ -169,7 +169,9 @@ Options:
 
 ## Getting additional information
 
-The command `apio info` provide additional information about apio and the system. 
+The command `apio info` provide additional information about apio and the system.
+
+For example, let’s get help about the top-module option in the apio.ini project file.
 
 ```
 $ apio info apio.ini top-module
@@ -184,6 +186,8 @@ specify the top module.
 Example:
   top-module = my_main
 ```
+
+Or, let’s retrieve the list of supported platforms.
 
 ```
 $ apio info platforms

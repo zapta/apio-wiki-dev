@@ -73,6 +73,17 @@
   font-family: "JetBrains Mono", "Roboto Mono", "DejaVu Sans Mono",
     "Courier New", Courier, monospace !important;
   font-weight: 500;
-  color: #212121; /* Nearly black for high visibility */
+  color: #1d8348; /* Nearly black for high visibility */
   background-color: #eeeeee; /* Maintain contrast */
+}
+
+/* Make inline code text more visible */
+.md-typeset code {
+  font-family: "JetBrains Mono", "Roboto Mono", "DejaVu Sans Mono",
+    "Courier New", Courier, monospace !important;
+  font-weight: 500;
+  color: #1d8348; /* Nearly black for high visibility */
+  background-color: #eeeeee; /* Maintain contrast */
+  padding: 0.1em 0.3em; /* Optional: small padding for better appearance */
+  border-radius: 3px;    /* Optional: rounded corners */
 }
