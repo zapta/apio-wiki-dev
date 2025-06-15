@@ -1,9 +1,7 @@
-![Apio banner](assets/apio-banner.svg)
-
 # Using Custom Boards
 
-Apio uses definitions of **FPGA devices**, **FPGA programmers**, and
-**FPGA boards** to simplify the setup of new projects. The diagram below
+Apio uses definitions of FPGA devices, FPGA programmers, and
+FPGA boards to simplify the setup of new projects. The diagram below
 illustrates the relationship between these definitions and Apio's operation,
 as well as the names of their respective definition files located in the
 [Apio resources directory](https://github.com/FPGAwars/apio/tree/develop/apio/resources).
@@ -37,7 +35,7 @@ directory of your project. These replacement files should:
   `programmers.jsonc`, or `boards.jsonc`).
 - Include only the specific FPGA, programmer, or board definitions you need.
 
-### Resource Files
+## Resource Files
 
 | Resource File       | Contains               | Keyed By        |
 | :------------------ | :--------------------- | :-------------- |
@@ -48,7 +46,7 @@ directory of your project. These replacement files should:
 > If you believe your custom definition may be useful to others,
 > consider submitting a pull request to the appropriate Apio resource file.
 
-### Example: Custom `boards.jsonc`
+## Example: Custom `boards.jsonc`
 
 The following is an example of a custom `boards.jsonc` file that defines
 a variant of the `upduino31` board:
@@ -70,9 +68,4 @@ a variant of the `upduino31` board:
 }
 ```
 
-> Note: Custom definitions must be compatible with the underlying toolchain.
-> Defining an unsupported FPGA may result in synthesis errors.
 
-<br>
-
-![FPGAwars banner](assets/fpgawars-banner.svg)

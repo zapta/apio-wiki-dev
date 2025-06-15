@@ -18,6 +18,11 @@ theme:
     - navigation.expand      # Expands all sections and subsections by default
     - navigation.tabs
 
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+
 
 
 # Navigation tree
@@ -80,6 +85,5 @@ nav:
       - Apio home: https://github.com/FPGAwars/apio
       - Bugs and requests: https://github.com/FPGAwars/apio/issues
       - Questions and discussions: https://github.com/FPGAwars/apio/discussions
-      - Credits: credits.md
 
 

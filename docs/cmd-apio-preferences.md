@@ -1,28 +1,22 @@
-
-
 # Apio preferences
 
-The command `apio preferences` allows to view and manage the setting
-of the apio's user's preferences. These settings are stored in the
-`profile.json` file in the apio home directory (e.g. `~/.apio`) and
-apply to all apio projects.
+The `apio preferences` command lets you view and manage user preferences. These settings are stored in the `profile.json` file in the Apio home directory (e.g. `~/.apio`) and apply to all Apio projects.
 
-#### EXAMPLES
+## EXAMPLES
+
 ```
-apio preferences -t light       # Colors for light backgrounds.
-apio preferences -t dark        # Colors for dark backgrounds.
-apio preferences -t no-colors   # No colors.
-apio preferences --list         # List current preferences.
-apio pref -t dark               # Using command shortcut.
+apio preferences -t light       # Set theme for light backgrounds
+apio preferences -t dark        # Set theme for dark backgrounds
+apio preferences -t no-colors   # Disable color output
+apio preferences --list         # Show current preferences
+apio pref -t dark               # Using command shortcut
 ```
 
-#### OPTIONS
-```
--t, --theme [light|dark|no-colors]  Set colors theme name.
--c, --colors                        List themes colors.
--l, --list                          List the preferences.
--h, --help                          Show this message and exit.
-```
+## OPTIONS
 
-<br>
-
+```
+-t, --theme [light|dark|no-colors]  Set color theme
+-c, --colors                        List available theme colors
+-l, --list                          Show current preferences
+-h, --help                          Show help message and exit
+```

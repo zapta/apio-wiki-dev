@@ -1,39 +1,34 @@
-
-
 # Apio test
 
-  The command `apio test` simulates one or all the testbenches in the
-  project and is useful for automated testing of your design.
-  Testbenches are expected to have names ending with `_tb` (e.g.,
-  `my_module_tb.v`) and should exit with the `$fatal` directive if an
-  error is detected.
+The `apio test` command simulates one or more testbenches in the project.
+It is intended for automated testing of your design. Testbenches should
+have filenames ending in `_tb` (e.g., `my_module_tb.v`) and should use
+the `$fatal` directive to indicate errors.
 
-#### EXAMPLES
+## EXAMPLES
+
 ```
-apio test                 # Run all *_tb.v testbenches.
-apio test my_module_tb.v  # Run a single testbench.
-```
-#### OPTIONS
-```
--e, --env name          Set the apio.ini env.
--p, --project-dir path  Set the root directory for the project.
--h, --help              Show this message and exit.
+apio test                 # Run all *_tb.v testbenches
+apio test my_module_tb.v  # Run a single testbench
 ```
 
-#### NOTES
+## OPTIONS
 
-* Do not use the Verilog `$dumpfile()` function in your
-testbenches, as this may override the default name and location Apio
-sets for the generated .vcd file.
+```
+-e, --env name          Use a named environment from apio.ini
+-p, --project-dir path  Specify the project root directory
+-h, --help              Show help message and exit
+```
 
-* Testbench specification is always the testbench file path
-relative to the project directory, even if using the `--project-dir`
-option.
+## NOTES
 
-* For a sample testbench compatible with Apio features, the apio example `alhambra-ii/getting-started`.
+- Avoid using the Verilog `$dumpfile()` function, as it may override
+  the default name and location Apio assigns for the generated `.vcd` file.
 
-* To simulate a testbench with a graphical visualization of the
-  signals, refer to the `apio sim` command.
+- Testbench paths must be relative to the project directory,
+  even when using the `--project-dir` option.
 
-<br>
+- See the Apio example `alhambra-ii/getting-started` for a testbench
+  that demonstrates recommended practices.
 
+- For graphical signal visualization, use the `apio sim` command instead.

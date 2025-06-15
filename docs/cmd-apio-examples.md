@@ -1,8 +1,8 @@
 # Apio examples
 
-The command group `apio examples` provides subcommands for listing and
-fetching Apio provided examples. Each example is a self contained mini
-project that can be built and uploaded to an FPGA board.
+The `apio examples` command group includes subcommands for listing and
+fetching example projects provided by Apio. Each example is a
+self-contained project that can be built and uploaded to its respective FPGA board.
 
 ## EXAMPLES
 
@@ -21,16 +21,15 @@ apio examples fetch
 
 # Apio examples list
 
-The command `apio examples list` lists the available Apio project
-examples that you can use.
+The `apio examples list` command shows available Apio project examples.
 
 ## EXAMPLES
 
 ```
 apio examples list                     # List all examples
-apio examples list  -v                 # More verbose output.
-apio examples list | grep alhambra-ii  # Show alhambra-ii examples.
-apio examples list | grep -i blink     # Show blinking examples.
+apio examples list  -v                 # Verbose output
+apio examples list | grep alhambra-ii  # Filter for alhambra-ii examples
+apio examples list | grep -i blink     # Filter for blinking examples
 ```
 
 ## OPTIONS
@@ -44,16 +43,15 @@ apio examples list | grep -i blink     # Show blinking examples.
 
 # Apio examples fetch
 
-The command `apio examples fetch` fetches a single examples or all the
-examples of a board. The destination directory is either the current
-directory or the directory specified with `--dst` and it should be
-empty and non existing.
+The `apio examples fetch` command retrieves a single example or all examples
+for a specific board. The default destination directory is the current directory and it can be overriden using the `--dst` flag. If the
+destination directory already exists, it must be empty.
 
 ## EXAMPLES
 
 ```
 apio examples fetch alhambra-ii/ledon    # Single example
-apio examples fetch alhambra-ii          # All board's examples
+apio examples fetch alhambra-ii          # All examples for the board
 apio examples fetch alhambra-ii -d work  # Explicit destination
 ```
 

@@ -1,38 +1,36 @@
 # Apio graph
 
-The command `apio graph` generates a graphical representation of the design.
+The `apio graph` command generates a graphical representation of the hardware design.
 
 ## EXAMPLES
 
 ```
-apio graph               # Generate a svg file.
-apio graph --svg         # Generate a svg file.
-apio graph --pdf         # Generate a pdf file.
-apio graph --png         # Generate a png file.
-apio graph -t my_module  # Graph my_module module.
+apio graph               # Generate an SVG file
+apio graph --svg         # Generate an SVG file
+apio graph --pdf         # Generate a PDF file
+apio graph --png         # Generate a PNG file
+apio graph -t my_module  # Graph the 'my_module' module
 ```
 
 ## OPTIONS
 
 ```
---svg                   Generate a svg file (default).
---png                   Generate a png file.
---pdf                   Generate a pdf file.
--e, --env name          Set the apio.ini env.
--p, --project-dir path  Set the root directory for the project.
--t, --top-module name   Set the name of the top module to graph.
--v, --verbose           Show detailed output.
--h, --help              Show this message and exit.
+--svg                   Generate an SVG file (default)
+--png                   Generate a PNG file
+--pdf                   Generate a PDF file
+-e, --env name          Use a named environment from apio.ini
+-p, --project-dir path  Specify the project root directory
+-t, --top-module name   Set the top-level module to graph
+-v, --verbose           Show detailed output
+-h, --help              Show help message and exit
 ```
 
 ## NOTES
 
-- On Windows, type `explorer _build/default/hardware.svg` to view
-  the graph (if your env is different than `default` change the commands accordingly).
-- On Mac OS type `open _build/default/hardware.svg`.
+- On Windows, run `explorer _build/default/hardware.svg` to view the graph.
+  If your environment name is different from `default`, adjust the path accordingly.
+- On macOS, use `open _build/default/hardware.svg`.
 
-<br>
-
-Example `apio graph` generated graph:
+## EXAMPLE OUTPUT
 
 ![](assets/apio-graph.svg)

@@ -13,7 +13,6 @@ The `apio drivers` command group installs and uninstalls drivers needed by some 
 ```
 apio drivers install ftdi
 apio drivers uninstall ftdi
-
 apio drivers install serial
 apio drivers uninstall serial
 ```

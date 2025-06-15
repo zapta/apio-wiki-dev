@@ -21,7 +21,7 @@ apio build --verbose-pnr     # Verbose place and route info
 -v, --verbose             Show all verbose output
     --verbose-synth       Show verbose synthesis stage output
     --verbose-pnr         Show verbose place-and-route stage output
--h, --help                Show this help message and exit
+-h, --help                Show help message and exit
 ```
 
 ## NOTES

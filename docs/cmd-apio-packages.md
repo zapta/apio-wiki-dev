@@ -1,36 +1,31 @@
-
-
 # Apio packages
 
 The command group `apio packages` provides commands to manage the
-installation of Apio packages. These are not Python packages but Apio
-packages containing various tools and data essential for the operation
-of Apio.
+installation of Apio packages. These are not Python packages, but collections of tools and data required by Apio.
 
-The list of available packages depends on the operating system you are
-using and may vary between different operating systems.
+> The list of available packages depends on your operating system and may vary across platforms.
 
-#### OPTIONS
+## OPTIONS
+
 ```
 -h, --help  Show this message and exit.
 ```
 
-#### SUBCOMMANDS
+## SUBCOMMANDS
+
 ```
 apio packages update
 apio packages list
 ```
 
-<br>
-
------
+---
 
 # Apio preferences update
 
-The command `apio packages update` updates the installed Apio packages
-to their latest requirements.
+The `apio packages update` command updates installed packages to their latest versions.
 
-#### EXAMPLES
+## EXAMPLES
+
 ```
 apio packages update            # Update packages
 apio pack upd                   # Same, with shortcuts
@@ -38,7 +33,7 @@ apio packages update --force    # Force reinstallation from scratch
 apio packages update --verbose  # Provide additional info
 ```
 
-#### OPTIONS
+## OPTIONS
 
 ```
 -f, --force    Force reinstallation.
@@ -46,37 +41,30 @@ apio packages update --verbose  # Provide additional info
 -h, --help     Show this message and exit.
 ```
 
-#### NOTES
+## NOTES
 
-* Adding the `--force` option forces the reinstallation of existing
+- Adding the `--force` option forces the reinstallation of existing
   packages; otherwise, packages that are already installed correctly
   remain unchanged.
 
-* It is highly recommended to run the 'apio packages update' once in a
-  while because it check the Apio remote server for the latest packages
-  versions with potential fixes and additional examples.
+- It is recommended to run the 'apio packages update' once in a
+  while because it checks the Apio remote server for updated packages with potential fixes and new examples.
 
-<br>
-
------
+---
 
 # Apio preferences list
 
-The command `apio packages list` lists the available and installed
-Apio packages. The list of available packages depends on the operating
-system you are using and may vary between operating systems.
+The `apio packages list` command displays the available and installed Apio packages. The list may vary depending on your operating system.
 
-#### EXAMPLES
+## EXAMPLES
+
 ```
 apio packages list
 ```
 
-#### OPTIONS
+## OPTIONS
+
 ```
 -v, --verbose  Show detailed output.
 -h, --help     Show this message and exit.
 ```
-
-
-<br>
-

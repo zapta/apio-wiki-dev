@@ -12,5 +12,4 @@ Apio uses GitHub repositories under the `FPGAwars` organization for its source c
 | [FPGAwars/tools-graphviz](https://github.com/FPGAwars/tools-graphviz)           | Package `graphviz`      | Windows   |
 | [FPGAwars/tools-drivers](https://github.com/FPGAwars/tools-drivers)             | Package `drivers`       | Windows   |
 
-
 For easier tracking and maintenance, all bug reports and discussions are consolidated in the main Apio repository: [FPGAwars/apio](https://github.com/FPGAwars/apio), which also serves as the project’s homepage.

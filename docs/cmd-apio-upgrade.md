@@ -1,6 +1,15 @@
+# Apio upgrade
 
+The `apio upgrade` command checks the latest Apio release and provides upgrade instructions if needed.
 
-<br><br><br>
-## This page is coming soon.
-<br><br><br>
+## EXAMPLES
 
+```
+apio upgrade
+```
+
+## OPTIONS
+
+```
+-h, --help  Show help message and exit
+```

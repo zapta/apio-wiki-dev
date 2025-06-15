@@ -1,22 +1,17 @@
-
-
 # Contributing Apio examples
 
-Apio's examples are stored in the `examples` directory of the [FPGAwars/apio-examples](https://github.com/FPGAwars/apio-examples) repository and are delivered in the Apio's `examples` package (type `apio examples list` to see it's version).
+Apio examples are stored in the `examples` directory of the [FPGAwars/apio-examples](https://github.com/FPGAwars/apio-examples) repository and are distributed in the Apio `examples` package (type `apio examples list` to check its version).
 
-To contribute a new example send a pull-request to the [FPGAwars/apio-examples](https://github.com/FPGAwars/apio-examples) repository after confirming that it complies with the following requirements.
+To contribute a new example, submit a pull request to the [FPGAwars/apio-examples](https://github.com/FPGAwars/apio-examples) repository after confirming it meets the following requirements:
 
-1. The example contains an `info` file with a single text line no longer than 50 chars that describes the example.
-2. The example lints with no warnings and can be built and uploaded.
-3. The example path is `examples/<board-id>/<example-name>` where `board-id` matches the board id in `apio.ini` and `example-name` contains only the char `a-z`, `0-9`, and `-` and starts with a letter.
-4. The example contains at least one testbench that passes `apio test` and `apio sim` with no errors.
-5. Each testbench has a matching '.gtkw' file with a GTKWave saved state. 
+- The example includes an `info` file with a single-line description (max 50 characters).
+- The example passes linting with no warnings and can be built and uploaded.
+- The example path is `examples/<board-id>/<example-name>`, where `<board-id>` matches the value in `apio.ini` and `<example-name>` includes only lowercase letters (a–z), digits (0–9), and dashes (-), and begins with a letter.
+- The example includes at least one testbench that passes `apio test` and `apio sim` without errors.
+- Each testbench has a corresponding `.gtkw` file with a saved GTKWave state.
 
-NOTES:
-1. The example may have all the files in a single directory or they can be spread in sub directories.
-2. The example may have any mix of Verilog `.v` files and System Verilog `.sv` files.
-3. If `apio.ini` contains more than one env, the rules above apply to all the envs (when selected using the `--env env` flag).
+## NOTES
 
-<br>
-
-
+- Files may be placed in a single directory or organized into subdirectories.
+- Verilog `.v` and SystemVerilog `.sv` files may be used in any combination.
+- If `apio.ini` defines multiple environments, the rules above apply to each environment selected with the `--env` flag.

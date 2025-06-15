@@ -1,46 +1,41 @@
-
-
 # Apio sim
 
-  The command `apio sim` simulates the default or the specified
-  testbench file and displays its simulation results in a graphical
-  GTKWave window. The testbench is expected to have a name ending with
-  `_tb`, such as `main_tb.v` or `main_tb.sv`. The default testbench file
-  can be specified using the apio.ini option `default-testbench`. If
-  `default-testbench` is not specified and the project has exactly one
-  testbench file, that file will be used as the default testbench.
+The `apio sim` command runs a simulation for the default or specified
+testbench and displays the results in a GTKWave window. Testbench files
+should end with `_tb`, such as `main_tb.v` or `main_tb.sv`. You can set
+the default testbench using the `default-testbench` option in `apio.ini`.
+If this option is not set and there's only one testbench in the project,
+that file will be used.
 
-  #### EXAMPLES
+## EXAMPLES
+
 ```
-apio sim                   # Simulate the default testbench.
-apio sim my_module_tb.v    # Simulate the specified testbench.
-apio sim my_module_tb.sv   # Simulate the specified testbench.
+apio sim                   # Simulate the default testbench
+apio sim my_module_tb.v    # Simulate the specified testbench
+apio sim my_module_tb.sv   # Simulate the specified testbench
 ```
 
-#### OPTIONS
+## OPTIONS
+
 ```
--f, --force             Force simulation.
--e, --env name          Set the apio.ini env.
--p, --project-dir path  Set the root directory for the project.
--h, --help              Show this message and exit.
+-f, --force             Force simulation
+-e, --env name          Use a named environment from apio.ini
+-p, --project-dir path  Specify the project root directory
+-h, --help              Show help message and exit
 ```
 
 #### NOTES
-* Do not use the Verilog `$dumpfile()` function in your testbenches, as this may override the default name and location Apio sets for the generated .vcd file.
 
-* Testbench specification is always the testbench file path relative to the project directory, even if using the `--project-dir` option.
+- Avoid using the Verilog `$dumpfile()` function, as it can override the default name and location Apio assigns for the `.vcd` file.
 
-* The sim command defines the `INTERACTIVE_SIM` macro, which can be used in the testbench to distinguish between `apio test` and `apio sim`. For example, you can use this macro to ignore certain errors when running with `apio sim` and view the erroneous signals in GTKWave.
+- Testbench paths must always be relative to the project directory, even when using `--project-dir`.
 
-* For a sample testbench that utilizes this macro, see the apio example `alhambra-ii/getting-started`.
+- The `apio sim` command defines the `INTERACTIVE_SIM` macro, which can be used in your testbench to distinguish it from `apio test`. For instance, you might suppress certain errors during interactive simulation to inspect signals in GTKWave.
 
-* When configuring the signals in GTKWave, save the configuration
-  so you don’t need to repeat it each time you run the simulation.
+- For a sample testbench that utilizes this macro, see the apio example `alhambra-ii/getting-started`.
 
-<br>
+- When configuring signals in GTKWave, save your setup so you don’t have to repeat it each time.
 
-Example sim results viewer:
+EXAMPLE SIMULATION RESULTS
+
 ![](assets/sim-gtkwave.png)
-
-<br>
-

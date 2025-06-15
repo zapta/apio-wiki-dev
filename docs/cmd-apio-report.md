@@ -1,29 +1,29 @@
-
-
 # Apio report
 
-The command `apio report` provides information on the utilization and
-timing of the design. It is useful for analyzing utilization
-bottlenecks and verifying that the design can operate at the desired
-clock speed.
+The `apio report` command provides resource utilization and timing
+information for the design. It helps identify bottlenecks and verify
+whether the design meets its target clock speed.
 
-#### EXAMPLES
-```
-apio report            # Print report.
-apio report --verbose  # Print extra information.
-```
+## EXAMPLES
 
-#### OPTIONS
 ```
--e, --env name          Set the apio.ini env.
--p, --project-dir path  Set the root directory for the project.
--v, --verbose           Show detailed output.
--h, --help              Show this message and exit.
+apio report            # Show report
+apio report --verbose  # Show detailed report
 ```
 
-Example report
+## OPTIONS
+
 ```
-FPGA Resource Utilization                       
+-e, --env name          Use a named environment from apio.ini
+-p, --project-dir path  Specify the project root directory
+-v, --verbose           Show detailed output
+-h, --help              Show help message and exit
+```
+
+## EXAMPLE REPORT
+
+```
+FPGA Resource Utilization
 ┌────────────────┬────────┬──────────┬─────────┐
 │  RESOURCE      │  USED  │   TOTAL  │  UTIL.  │
 ├────────────────┼────────┼──────────┼─────────┤
@@ -35,12 +35,10 @@ FPGA Resource Utilization
 │  SB_WARMBOOT   │        │       1  │         │
 └────────────────┴────────┴──────────┴─────────┘
 
-Clock Information              
+Clock Information
 ┌─────────┬───────────────────┐
 │  CLOCK  │  MAX SPEED [Mhz]  │
 ├─────────┼───────────────────┤
 │  CLK    │           119.15  │
 └─────────┴───────────────────┘
 ```
-
-
