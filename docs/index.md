@@ -1,17 +1,196 @@
-# Welcome to MkDocs
+# Apio Documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Introduction
 
-## Commands
+Apio is an easy to install and use open source app that allows to develop FPGA designs with ease using simple commands such as `apio lint` to verify the code, `apio sim` to simulate the design, and `apio upload` to build the design and program the FPGA board. Apio runs on Mac OSX, Linux and Windows, and currently supports 3 FPGA architectures, 70+ FPGAs, 70+ FPGA boards, and growing.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+The rest of this page, provides a showcase of a some of Apio's features which are covered in more details in the sections in the sidebar. After reviewing it, we recommend starting with the the [Quick start](Quick-start) section. 
 
-## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+> The examples here use the Alhambra-II FPGA board though other supported boards should work just the same.
+
+> Some of logs in the examples below were truncated for clarity.
+
+## Apio project examples
+Currently there are 60+ project examples that are included with Apio. To list them, run the following command:
+
+```
+$ apio examples
+
+Apio Examples
+┌──────────────────────────────┬───────┬───────────────────────┐
+│ BOARD/EXAMPLE                │ ARCH  │ DESCRIPTION           │
+├──────────────────────────────┼───────┼───────────────────────┤
+...
+│ alhambra-ii/bcd-counter      │ ice40 │ Verilog example...    │
+│ alhambra-ii/blinky           │ ice40 │ Blinking led          │
+│ alhambra-ii/getting-started  │ ice40 │ Example for Apio...   │
+│ alhambra-ii/ledon            │ ice40 │ Turning on a led      │
+...
+└──────────────────────────────┴───────┴───────────────────────┘
+Total of 63 examples
+```
+
+Let's fetch the `getting-started` of the `alhambra-ii` board.
+
+```
+$ mkdir example
+$ cd example
+
+# Fetch the example's files.
+example$ apio examples fetch "alhambra-ii/getting-started"
+
+# List the files.
+example$ tree .
+.
+├── apio.ini
+├── main_tb.gtkw
+├── main_tb.v
+├── main.v
+└── pinout.pcf
+```
+
+Now let's build the example and upload it to the FPGA goard.
+```
+example$ apio upload
+```
+
+And Voilà! - the design is now running on the FPGA board.
+
+## Analyzing utilization and speed.
+
+The command ``apio report`` analyzes and reports the FPGA utilization and the design's maximal speed.
+
+```
+example$ apio report
+
+...
+
+FPGA Resource Utilization
+┌────────────────┬────────┬──────────┬─────────┐
+│  RESOURCE      │  USED  │   TOTAL  │  UTIL.  │
+├────────────────┼────────┼──────────┼─────────┤
+│  ICESTORM_LC   │    69  │    7680  │     0%  │
+│  ICESTORM_PLL  │        │       2  │         │
+│  ICESTORM_RAM  │        │      32  │         │
+│  SB_GB         │     2  │       8  │    25%  │
+│  SB_IO         │     3  │     256  │     1%  │
+│  SB_WARMBOOT   │        │       1  │         │
+└────────────────┴────────┴──────────┴─────────┘
+
+Clock Information
+┌─────────┬───────────────────┐
+│  CLOCK  │  MAX SPEED [Mhz]  │
+├─────────┼───────────────────┤
+│  CLK    │           101.93  │
+└─────────┴───────────────────┘
+```
+
+## Formatting the source code code.
+
+The ``apio format`` finds and formats all the project source files.
+
+```
+work2$ apio format
+
+Using env default (alhambra-ii)
+Formatting main.v
+Formatting main_tb.v
+Processed 2 files.
+```
+
+## Verifying the source code
+
+The command `apio lint` performs 'nitpicking' verification of the code and report any issue it finds like 
+the one we intentionally created in for this example.
+
+```
+work2$ apio lint
+...
+Testbench main_tb.v
+...
+%Warning-NULLPORT: main.v:8:1: Null port on module (perhaps extraneous comma)
+    8 | );
+      | ^
+                   ... For warning description see https://verilator.org/warn/NULLPORT?v=5.037
+                   ... Use "/* verilator lint_off NULLPORT */" and lint_on around source to disable this message.
+```
+
+## Simulating the design
+
+The command `apio sim` runs a simulation of a selected testbench and shows its result in an interactive graphical windows.
+
+```
+work$ apio sim main_tb.v
+```
+
+![](assets/sim-gtkwave.png)
+
+
+## Testing the design
+
+The command `apio test` identifies and simulates in batch mode all all the testbenches in the design. The command succeeds if all the testbenches complete the simulation and fail if any of them exist a failed assertion with `$fatal`.
+
+```
+work2$ apio test
+...
+vvp _build/default/main_tb.out -dumpfile=_build/default/main_tb.vcd
+VCD info: dumpfile _build/default/main_tb.vcd opened for output.
+main_tb.v:47: $finish called at 966000 (1ps)
+```
+
+## Commands help
+
+Every apio command access the `--help`` or -`h` flag which print a short description of the command. When a command has multiple level, the help flag can be used at any level, for example `apio -h`, `apio examples -h` and `apio examples list -h`. 
+
+```
+$$ apio clean -h
+Usage: apio clean [OPTIONS]
+
+  The command 'apio clean' removes all the output files previously
+  generated by apio commands.
+
+  Example:
+    apio clean
+
+Options:
+  -p, --project-dir path  Set the root directory for the project.
+  -h, --help              Show this message and exit.
+```
+
+## Getting additional information
+
+The command `apio info` provide additional information about apio and the system. 
+
+```
+$ apio info apio.ini top-module
+
+TOP-MODULE option (OPTIONAL)
+
+The option 'top-module' specifies the name of the top module of the 
+design. If 'top-module' is not specified, Apio assumes the default 
+name 'main'; however, it is a good practice to always explicitly 
+specify the top module.
+
+Example:
+  top-module = my_main
+```
+
+```
+$ apio info platforms
+
+Apio Supported Platforms
+┌────────────────────────┬───────────────────────────────────────┐
+│ PLATFORM ID            │ DESCRIPTION                           │
+├────────────────────────┼───────────────────────────────────────┤
+│ * darwin_arm64         │ Mac OSX, ARM 64 bit (Apple Silicon)   │
+├────────────────────────┼───────────────────────────────────────┤
+│   darwin_x86_64        │ Mac OSX, x86 64 bit (Intel)           │
+├────────────────────────┼───────────────────────────────────────┤
+│   linux_x86_64         │ Linux X86 64 bit                      │
+├────────────────────────┼───────────────────────────────────────┤
+│   linux_aarch64        │ Linux ARM 64 bit                      │
+├────────────────────────┼───────────────────────────────────────┤
+│   windows_amd64        │ Windows x86 64 bit                    │
+└────────────────────────┴───────────────────────────────────────┘
+```
