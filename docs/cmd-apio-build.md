@@ -1,15 +1,14 @@
-# Apio build
+# Building a Project
 
-The command `apio build` processes the project’s synthesis source
-files and generates a bitstream file, which can then be uploaded to
-your FPGA.
+The `apio build` command compiles the project's source files and
+generates a bitstream ready for upload to the FPGA.
 
 ## EXAMPLES
 
 ```
-apio build                   # Typical usage
-apio build -e debug          # Set the apio.ini env.
-apio build -v                # Verbose info (all)
+apio build                   # Typical Usage
+apio build -e debug          # Use a specific environment from apio.ini
+apio build -v                # Show all verbose output
 apio build --verbose-synth   # Verbose synthesis info
 apio build --verbose-pnr     # Verbose place and route info
 ```
@@ -17,17 +16,17 @@ apio build --verbose-pnr     # Verbose place and route info
 ## OPTIONS
 
 ```
--e, --env name          Set the apio.ini env.
--p, --project-dir path  Set the root directory for the project.
--v, --verbose           Show detailed output.
---verbose-synth         Show detailed synth stage output.
---verbose-pnr           Show detailed pnr stage output.
--h, --help              Show this message and exit.
+-e, --env name            Use a named environment from apio.ini
+-p, --project-dir path    Set the project's root directory
+-v, --verbose             Show all verbose output
+    --verbose-synth       Show verbose synthesis stage output
+    --verbose-pnr         Show verbose place-and-route stage output
+-h, --help                Show this help message and exit
 ```
 
 ## NOTES
 
-- The top module of your build should be specified using the `top-module` option in `apio.ini`.
-- The build command ignores testbench files (`*_tb.v`, and `*_tb.sv`).
-- It is unnecessary to run `apio build` before running `apio upload`.
-- To force a rebuild from scratch run `apio clean` first.
+* Specify the top module using the `top-module` option in `apio.ini`.
+* Testbench files (`*_tb.v` and `*_tb.sv`) are ignored during build.
+* Running `apio build` before `apio upload` is usually unnecessary.
+* Run `apio clean` before building to force a full rebuild.
