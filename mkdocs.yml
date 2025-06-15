@@ -80,7 +80,4 @@ nav:
       - Development environment: developement-environment.md
       - Creating an Apio version: creating-apio-version.md
       - Creating a package version: creating-package-version.md
-  - Help:
-      - Apio home: https://github.com/FPGAwars/apio
-      - Bugs and requests: https://github.com/FPGAwars/apio/issues
-      - Questions and discussions: https://github.com/FPGAwars/apio/discussions
+  - Help: help.md
