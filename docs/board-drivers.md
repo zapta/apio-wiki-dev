@@ -1,24 +1,18 @@
-
-
 # FPGA Board Drivers
 
-With some platforms and boards, it may be necessary to install a system driver to make the board accessible by the programmer. If this becomes necessary, use the `apio drivers install` command to install the necessary driver. 
+Some FPGA boards require a system driver before the programmer can access them. When this is the case, install the driver with the `apio drivers install` command.
 
-Apio comes with two kinds of drivers called 'ftdi' and 'serial' and the table below summarized the differences between them.
+Apio provides two types of driver: `ftdi` and `serial`. The table below compares them.
 
-> Drivers installation is not required of Mac OSX.
+> * Driver installation is not required on macOS.
 
-> If the FPGA board is shown in the device list with `--unavail--` manufactuer or product string, it's typically an indication that the proper driver need to be install. 
+> * If the FPGA board appears in the device list with `--unavail--` manufacturer or product strings, the appropriate driver probably needs to be installed.
 
 
-|   | FTDI drivers | Serial drivers   |
+|   | FTDI driver | Serial driver   |
 |--------|:-----|:------------|
 | Platforms  | Linux, Windows  | Linux, Windows   |
 | Driver install  | `apio drivers install ftdi`  | `apio drivers install serial`   |
 | Driver uninstall  | `apio drivers uninstall ftdi`  | `apio drivers uninstall serial`   |
 | List devices    | `apio devices usb`  | `apio devices serial`    |
-
-
-
-<br>
 
