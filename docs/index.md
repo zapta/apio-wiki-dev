@@ -4,24 +4,25 @@
 
 **Apio** is an **easy-to-install** and **easy-to-use** open-source application that simplifies FPGA development. It provides simple commands such as:
 
-- `apio lint` – to verify the code  
-- `apio sim` – to simulate the design  
-- `apio upload` – to build the design and program the FPGA board  
+- `apio lint` – to verify the code
+- `apio sim` – to simulate the design
+- `apio upload` – to build the design and program the FPGA board
 
 Apio runs on macOS, Linux, and Windows. It currently supports:
 
-- 3 FPGA architectures  
-- 70+ FPGAs  
-- 70+ FPGA boards  
+- 3 FPGA architectures
+- 70+ FPGAs
+- 70+ FPGA boards
 
 …and the list continues to grow.
 
 This page offers a showcase of some of Apio's features, detailed further in the sidebar sections. After reviewing this introduction, we recommend starting with the [Quick start](quick-start.md) section.
 
-> * The examples here use the Alhambra-II FPGA board, though other supported boards should work similarly. 
-> * Some logs in the examples below have been truncated for clarity.
+> - The examples here use the Alhambra-II FPGA board, though other supported boards should work similarly.
+> - Some logs in the examples below have been truncated for clarity.
 
 ## Apio project examples
+
 Currently there are 60+ project examples that are included with Apio. To list them, run the following command:
 
 ```
@@ -61,6 +62,7 @@ example$ tree .
 ```
 
 Now let's build the example and program our Alhambra-II FPGA board.
+
 ```
 example$ apio upload
 ```
@@ -109,7 +111,7 @@ Processed 2 files.
 
 ## Verifying the source code
 
-The command `apio lint` performs 'nitpicking' verification of the code and reports any issues it finds, like 
+The command `apio lint` performs 'nitpicking' verification of the code and reports any issues it finds, like
 the one we intentionally created for this example.
 
 ```
@@ -134,7 +136,6 @@ work$ apio sim main_tb.v
 
 ![](assets/sim-gtkwave.png)
 
-
 ## Testing the design
 
 The command `apio test` simulates all the testbenches in batch mode and fails if any assertions fail with
@@ -153,7 +154,7 @@ main_tb.v:47: $finish called at 966000 (1ps)
 Every apio command accepts the `--help` or `-h` flag, which prints a short description of the command. When a command has multiple levels, the help flag can be used at any level, for example: `apio -h`, `apio examples -h`, and `apio examples list -h`.
 
 ```
-$$ apio clean -h
+$ apio clean -h
 Usage: apio clean [OPTIONS]
 
   The command 'apio clean' removes all the output files previously
@@ -167,43 +168,9 @@ Options:
   -h, --help              Show this message and exit.
 ```
 
-## Getting additional information
+---
 
-The command `apio info` provides additional information about apio and the system.
-
-For example, let’s get help about the top-module option in the apio.ini project file.
-
-```
-$ apio info apio.ini top-module
-
-TOP-MODULE option (OPTIONAL)
-
-The option 'top-module' specifies the name of the top module of the 
-design. If 'top-module' is not specified, Apio assumes the default 
-name 'main'; however, it is a good practice to always explicitly 
-specify the top module.
-
-Example:
-  top-module = my_main
-```
-
-Or, let’s retrieve the list of supported platforms.
-
-```
-$ apio info platforms
-
-Apio Supported Platforms
-┌────────────────────────┬───────────────────────────────────────┐
-│ PLATFORM ID            │ DESCRIPTION                           │
-├────────────────────────┼───────────────────────────────────────┤
-│ * darwin_arm64         │ Mac OSX, ARM 64 bit (Apple Silicon)   │
-├────────────────────────┼───────────────────────────────────────┤
-│   darwin_x86_64        │ Mac OSX, x86 64 bit (Intel)           │
-├────────────────────────┼───────────────────────────────────────┤
-│   linux_x86_64         │ Linux X86 64 bit                      │
-├────────────────────────┼───────────────────────────────────────┤
-│   linux_aarch64        │ Linux ARM 64 bit                      │
-├────────────────────────┼───────────────────────────────────────┤
-│   windows_amd64        │ Windows x86 64 bit                    │
-└────────────────────────┴───────────────────────────────────────┘
-```
+This concludes Apio's overview. We suggest continuing to the
+[Quick Start](quick-start.md) guide or jump to the
+[Python-based installation](python-based-installation.md) or
+[Standalone installation](standalone-installation.md) sections.

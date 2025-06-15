@@ -6,7 +6,7 @@ In this page, we will go through the steps of creating, validating, and uploadin
 
 ## Step 1: Installing Apio
 
-The first step in using Apio is installing it. You can use either [Python-based installation](python-based-installation.md) or [Standalone installation](standalone-installation.md). When done, continue to step 2 below.
+The first step in using Apio is installing it. You can use either the [Python-based installation](python-based-installation.md) or the [Standalone installation](standalone-installation.md). When done, continue to step 2 below.
 
 ---
 
@@ -36,12 +36,12 @@ project$ tree .
 
 The files in this Apio project are:
 
-| Name           | Description                                           |
-| :------------- | :-------------------------------------------------- |
-| `apio.ini`     | The Apio project file.                               |
-| `main.v`       | Verilog source code.                                 |
-| `pinout.pcf`   | ICE40 pin assignments.                               |
-| `main_tb.v`    | A Verilog testbench for testing `main.v`.           |
+| Name           | Description                                             |
+| :------------- | :------------------------------------------------------ |
+| `apio.ini`     | The Apio project file.                                  |
+| `main.v`       | Verilog source code.                                    |
+| `pinout.pcf`   | ICE40 pin assignments.                                  |
+| `main_tb.v`    | A Verilog testbench for testing `main.v`.               |
 | `main_tb.gtkw` | Saved GTKWAVE configuration for simulating `main_tb.v`. |
 
 ---
@@ -128,4 +128,4 @@ The example now runs on the FPGA board, and two LEDs should be flashing alternat
 
 ---
 
-This concludes the Apio quick start guide. We suggest reviewing the documentation on the sidebar and watching the tutorial videos in the [Video tutorial section](video-tutorial.md).
+This concludes the Apio quick start guide. We suggest reviewing the [Video tutorial](video-tutorial.md) or going directly to the [Python-based installation](python-based-installation.md) or [Standalone installation](standalone-installation.md) sections.
