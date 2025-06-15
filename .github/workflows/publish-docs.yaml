@@ -8,7 +8,7 @@ on:
     paths:
       - "docs/**"
       - "mkdocs.yml"
-      - '.github/workflows/publish-docs.yaml'
+      - ".github/workflows/publish-docs.yaml"
 
   schedule:
     - cron: "0 * * * *" # Every hour at minute 0
@@ -16,7 +16,7 @@ on:
   workflow_dispatch: # 👈 enables manual trigger via GitHub UI
 
 permissions:
-  contents: write  # 👈 Needed for mkdocs gh-deploy to push
+  contents: write # 👈 Needed for mkdocs gh-deploy to push
 
 jobs:
   publish:
@@ -43,11 +43,9 @@ jobs:
       - name: Deploy to GitHub Pages
         # Push also if no change.
         run: |
-          set -x
-          echo '```' >> $GITHUB_STEP_SUMMARY
+          # set -x
+          # echo '```' >> $GITHUB_STEP_SUMMARY
           mkdocs gh-deploy --force 2>&1 | tee >> $GITHUB_STEP_SUMMARY
-          echo '```' >> $GITHUB_STEP_SUMMARY
+          # echo '```' >> $GITHUB_STEP_SUMMARY
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      
