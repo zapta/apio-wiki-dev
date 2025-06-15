@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#apio-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -444,18 +444,81 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#apio-project-examples" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      Apio project examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyzing-utilization-and-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analyzing utilization and speed.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatting-the-source-code-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formatting the source code code.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verifying-the-source-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verifying the source code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulating-the-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simulating the design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-the-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing the design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commands help
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-additional-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting additional information
     </span>
   </a>
   
@@ -2182,18 +2245,81 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#apio-project-examples" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      Apio project examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyzing-utilization-and-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analyzing utilization and speed.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatting-the-source-code-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formatting the source code code.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verifying-the-source-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verifying the source code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulating-the-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simulating the design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-the-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing the design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commands help
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-additional-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting additional information
     </span>
   </a>
   
@@ -2215,20 +2341,156 @@
 
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+<h1 id="apio-documentation">Apio Documentation</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Apio is an easy to install and use open source app that allows to develop FPGA designs with ease using simple commands such as <code>apio lint</code> to verify the code, <code>apio sim</code> to simulate the design, and <code>apio upload</code> to build the design and program the FPGA board. Apio runs on Mac OSX, Linux and Windows, and currently supports 3 FPGA architectures, 70+ FPGAs, 70+ FPGA boards, and growing.</p>
+<p>The rest of this page, provides a showcase of a some of Apio's features which are covered in more details in the sections in the sidebar. After reviewing it, we recommend starting with the the <a href="Quick-start">Quick start</a> section. </p>
+<blockquote>
+<p>The examples here use the Alhambra-II FPGA board though other supported boards should work just the same.</p>
+<p>Some of logs in the examples below were truncated for clarity.</p>
+</blockquote>
+<h2 id="apio-project-examples">Apio project examples</h2>
+<p>Currently there are 60+ project examples that are included with Apio. To list them, run the following command:</p>
+<pre><code>$ apio examples
+
+Apio Examples
+┌──────────────────────────────┬───────┬───────────────────────┐
+│ BOARD/EXAMPLE                │ ARCH  │ DESCRIPTION           │
+├──────────────────────────────┼───────┼───────────────────────┤
+...
+│ alhambra-ii/bcd-counter      │ ice40 │ Verilog example...    │
+│ alhambra-ii/blinky           │ ice40 │ Blinking led          │
+│ alhambra-ii/getting-started  │ ice40 │ Example for Apio...   │
+│ alhambra-ii/ledon            │ ice40 │ Turning on a led      │
+...
+└──────────────────────────────┴───────┴───────────────────────┘
+Total of 63 examples
+</code></pre>
+<p>Let's fetch the <code>getting-started</code> of the <code>alhambra-ii</code> board.</p>
+<pre><code>$ mkdir example
+$ cd example
+
+# Fetch the example's files.
+example$ apio examples fetch &quot;alhambra-ii/getting-started&quot;
+
+# List the files.
+example$ tree .
+.
+├── apio.ini
+├── main_tb.gtkw
+├── main_tb.v
+├── main.v
+└── pinout.pcf
+</code></pre>
+<p>Now let's build the example and upload it to the FPGA goard.</p>
+<pre><code>example$ apio upload
+</code></pre>
+<p>And Voilà! - the design is now running on the FPGA board.</p>
+<h2 id="analyzing-utilization-and-speed">Analyzing utilization and speed.</h2>
+<p>The command <code>apio report</code> analyzes and reports the FPGA utilization and the design's maximal speed.</p>
+<pre><code>example$ apio report
+
+...
+
+FPGA Resource Utilization
+┌────────────────┬────────┬──────────┬─────────┐
+│  RESOURCE      │  USED  │   TOTAL  │  UTIL.  │
+├────────────────┼────────┼──────────┼─────────┤
+│  ICESTORM_LC   │    69  │    7680  │     0%  │
+│  ICESTORM_PLL  │        │       2  │         │
+│  ICESTORM_RAM  │        │      32  │         │
+│  SB_GB         │     2  │       8  │    25%  │
+│  SB_IO         │     3  │     256  │     1%  │
+│  SB_WARMBOOT   │        │       1  │         │
+└────────────────┴────────┴──────────┴─────────┘
+
+Clock Information
+┌─────────┬───────────────────┐
+│  CLOCK  │  MAX SPEED [Mhz]  │
+├─────────┼───────────────────┤
+│  CLK    │           101.93  │
+└─────────┴───────────────────┘
+</code></pre>
+<h2 id="formatting-the-source-code-code">Formatting the source code code.</h2>
+<p>The <code>apio format</code> finds and formats all the project source files.</p>
+<pre><code>work2$ apio format
+
+Using env default (alhambra-ii)
+Formatting main.v
+Formatting main_tb.v
+Processed 2 files.
+</code></pre>
+<h2 id="verifying-the-source-code">Verifying the source code</h2>
+<p>The command <code>apio lint</code> performs 'nitpicking' verification of the code and report any issue it finds like 
+the one we intentionally created in for this example.</p>
+<pre><code>work2$ apio lint
+...
+Testbench main_tb.v
+...
+%Warning-NULLPORT: main.v:8:1: Null port on module (perhaps extraneous comma)
+    8 | );
+      | ^
+                   ... For warning description see https://verilator.org/warn/NULLPORT?v=5.037
+                   ... Use &quot;/* verilator lint_off NULLPORT */&quot; and lint_on around source to disable this message.
+</code></pre>
+<h2 id="simulating-the-design">Simulating the design</h2>
+<p>The command <code>apio sim</code> runs a simulation of a selected testbench and shows its result in an interactive graphical windows.</p>
+<pre><code>work$ apio sim main_tb.v
+</code></pre>
+<p><img alt="" src="assets/sim-gtkwave.png" /></p>
+<h2 id="testing-the-design">Testing the design</h2>
+<p>The command <code>apio test</code> identifies and simulates in batch mode all all the testbenches in the design. The command succeeds if all the testbenches complete the simulation and fail if any of them exist a failed assertion with <code>$fatal</code>.</p>
+<pre><code>work2$ apio test
+...
+vvp _build/default/main_tb.out -dumpfile=_build/default/main_tb.vcd
+VCD info: dumpfile _build/default/main_tb.vcd opened for output.
+main_tb.v:47: $finish called at 966000 (1ps)
+</code></pre>
+<h2 id="commands-help">Commands help</h2>
+<p>Every apio command access the <code>--help`` or -</code>h<code>flag which print a short description of the command. When a command has multiple level, the help flag can be used at any level, for example</code>apio -h<code>,</code>apio examples -h<code>and</code>apio examples list -h`. </p>
+<pre><code>$$ apio clean -h
+Usage: apio clean [OPTIONS]
+
+  The command 'apio clean' removes all the output files previously
+  generated by apio commands.
+
+  Example:
+    apio clean
+
+Options:
+  -p, --project-dir path  Set the root directory for the project.
+  -h, --help              Show this message and exit.
+</code></pre>
+<h2 id="getting-additional-information">Getting additional information</h2>
+<p>The command <code>apio info</code> provide additional information about apio and the system. </p>
+<pre><code>$ apio info apio.ini top-module
+
+TOP-MODULE option (OPTIONAL)
+
+The option 'top-module' specifies the name of the top module of the 
+design. If 'top-module' is not specified, Apio assumes the default 
+name 'main'; however, it is a good practice to always explicitly 
+specify the top module.
+
+Example:
+  top-module = my_main
+</code></pre>
+<pre><code>$ apio info platforms
+
+Apio Supported Platforms
+┌────────────────────────┬───────────────────────────────────────┐
+│ PLATFORM ID            │ DESCRIPTION                           │
+├────────────────────────┼───────────────────────────────────────┤
+│ * darwin_arm64         │ Mac OSX, ARM 64 bit (Apple Silicon)   │
+├────────────────────────┼───────────────────────────────────────┤
+│   darwin_x86_64        │ Mac OSX, x86 64 bit (Intel)           │
+├────────────────────────┼───────────────────────────────────────┤
+│   linux_x86_64         │ Linux X86 64 bit                      │
+├────────────────────────┼───────────────────────────────────────┤
+│   linux_aarch64        │ Linux ARM 64 bit                      │
+├────────────────────────┼───────────────────────────────────────┤
+│   windows_amd64        │ Windows x86 64 bit                    │
+└────────────────────────┴───────────────────────────────────────┘
 </code></pre>
 
 
