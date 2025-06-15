@@ -21,7 +21,7 @@ $ apio examples list
 └────────────────────────────────┴───────┴─────────────────────────────────────────────────────────────┘
 ```
 
-To fetch an example, type:
+To fetch an example we create a new empty directory and fetch the example files int it.
 
 ```
 # Create an empty project directory
@@ -30,8 +30,11 @@ $ cd work
 
 # Fetch the example
 $ apio example fetch alhambra-ii/getting-started
+```
 
-# List the files
+Now lets look at the project file structure
+
+```
 $ tree .
 .
 ├── apio.ini
@@ -39,8 +42,10 @@ $ tree .
 ├── main_tb.v
 ├── main.v
 └── pinout.pcf
+```
 
-# Show the project file
+And the project file `apio.ini`.
+```
 $ cat -n apio.ini
      1  ; Apio project file.
      2
