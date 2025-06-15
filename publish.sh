@@ -1,4 +1,4 @@
 #!/bin/bash
 
-mkdocs gh-deploy
+mkdocs gh-deploy --strict
 

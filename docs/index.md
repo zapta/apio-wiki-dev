@@ -16,7 +16,7 @@ Apio runs on macOS, Linux, and Windows. It currently supports:
 
 …and the list continues to grow.
 
-This page offers a showcase of some of Apio's features, detailed further in the sidebar sections. After reviewing this introduction, we recommend starting with the [Quick start](Quick-start) section.
+This page offers a showcase of some of Apio's features, detailed further in the sidebar sections. After reviewing this introduction, we recommend starting with the [Quick start](quick-start.md) section.
 
 > * The examples here use the Alhambra-II FPGA board, though other supported boards should work similarly. 
 > * Some logs in the examples below have been truncated for clarity.
