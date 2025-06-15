@@ -19,6 +19,13 @@
   font-size: 1.05em;
 }
 
+/* Style the 'Home' link when href is '.' */
+.md-nav__link[href="."] {
+  color: #d9534f !important;
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
 /* Apply borders to all table cells */
 .md-typeset table td,
 .md-typeset table th {
