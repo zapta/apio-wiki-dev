@@ -4,26 +4,25 @@ site_name: Apio Docs
 # The temporary directory with the generated site.
 site_dir: _site
 
+plugins:
+  - search
+
 extra_css:
   - stylesheets/extra.css
 
-# Theme.
 theme:
-  # name: mkdocs
-  # name: readthedocs
   name: material
 
+  # This controls the behavior of the navigation.
   features:
-    - navigation.sections    # Enables second-level grouping
-    - navigation.expand      # Expands all sections and subsections by default
+    - navigation.sections # Enables second-level grouping
+    - navigation.expand # Expands all sections and subsections by default
     - navigation.tabs
 
 markdown_extensions:
   - admonition
   - toc:
       permalink: true
-
-
 
 # Navigation tree
 nav:
@@ -85,5 +84,3 @@ nav:
       - Apio home: https://github.com/FPGAwars/apio
       - Bugs and requests: https://github.com/FPGAwars/apio/issues
       - Questions and discussions: https://github.com/FPGAwars/apio/discussions
-
-

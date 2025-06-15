@@ -67,5 +67,3 @@ a variant of the `upduino31` board:
   }
 }
 ```
-
-
