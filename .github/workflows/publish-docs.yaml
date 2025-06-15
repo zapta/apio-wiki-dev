@@ -43,9 +43,10 @@ jobs:
       - name: Deploy to GitHub Pages
         # Push also if no change.
         run: |
-          echo "```" >> $GITHUB_STEP_SUMMARY
+          set -x
+          echo '```' >> $GITHUB_STEP_SUMMARY
           mkdocs gh-deploy --force 2>&1 | tee >> $GITHUB_STEP_SUMMARY
-          echo "```" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
