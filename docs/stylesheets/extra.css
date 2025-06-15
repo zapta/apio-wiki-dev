@@ -48,28 +48,36 @@
 
 /* Bold titles with dark gray color */
 .md-typeset h1,
-.md-typeset h2,
+.md-typeset h2
+{
+  font-weight: 700; /* bold */
+  color: #444444; /* dark gray, not full black */
+}
+
+/* Bold titles with dark gray color */
+
 .md-typeset h3,
 .md-typeset h4,
 .md-typeset h5,
 .md-typeset h6 {
   font-weight: 700; /* bold */
-  color: #777777; /* dark gray, not full black */
+  color: #666666; /* dark gray, not full black */
 }
 
 /* # title size */
 .md-typeset h1 {
-  font-size: 1.8em;  /* Default is ~1.8em, reduce as needed */
+  font-size: 2em;  /* Default is ~1.8em, reduce as needed */
 }
 
 /* ## title size */
 .md-typeset h2 {
-  font-size: 1.2em;  /* Default is ~1.5em */
+  font-size: 1.4em;  /* Default is ~1.5em */
+  margin-top: 2.5em;   /* Add vertical space above */
 }
 
 /* ### title size */
 .md-typeset h3 {
-  font-size: 1.1em;  /* Default is ~1.25em */
+  font-size: 1.2em;  /* Default is ~1.25em */
 }
 
 /* #### title size */
@@ -93,7 +101,8 @@
 
 /* Table header color */
 .md-typeset table th {
-  color: #777777 !important;
+  color: #555555 !important;
+  background-color: #e2eefc; /* Light gray background for header cells */
 }
 
 /* Make the code block text more visible */

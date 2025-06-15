@@ -1,40 +1,41 @@
+# Apio Developer Environment
 
+## Fork the Apio Repository
 
-# Apio Developers Environment
+The first step in developing for Apio is to fork the [Apio repository](https://github.com/FPGAwars/apio). This will allow you to run the GitHub test workflow before submitting your pull request. In the rest of this document, we assume that you have forked the Apio repository and cloned it locally on your computer.
 
-## Forking the Apio repository
-The first step in developing for Apio is to fork the Apio repository. This will allow you to run run all the test workflow before submitting your pull request.  In the rest of this document we assume that foked the Apio repository and cloned it locally on your computer.
+## Run Your Cloned Apio
 
-## Installing your cloned repo using Pip
+The easiest way to develop Apio is to install its source code from your local repo as the Pip `apio` package. This will allow you to test your edited code by running `apio` from the command line.
 
-Having the Pip `apio` package installed from your local cloned repo will allow you to run `apio` commands locally using your latest code. This step greatly simplified the edit/test/repeat development cycle and is highly recomanded.
+To install the Apio source code as the Pip `apio` package, run these commands in the root directory of the Apio repository:
 
-Run this in the repo's root directory where the file `pyproject.toml` resides.
 ```
 # In case apio is installed
 pip uninstall apio
 
-# Install the repo as the the Pip `apio` package.
+# Install the repo as the Pip `apio` package.
 pip install -e .
 
-# Confirming Apio 'Apio Python package' dir.
+# Confirm Apio 'Apio Python package' directory.
 apio info system
 ```
 
-## Test your changes before committing to your forked repo.
-Before committing your changes to your forked Apio repository run the following command in the repo root directory.  This will run the linters and then use pytest to run all the offline and online tests and can take a few minutes to complete
+## Test Changes Locally
+
+Before creating a commit, test your code locally by running this in the repo root directory:
 
 ```shell
 make check
 ```
 
-During debugging its sometime useful to run partial and quick tests that that covered the area being worked on. Below are some examples for partial test you can run (always in the root directory of your repo)   
+During debugging, it is sometimes useful to run quick partial tests before running `make check`. Here are some examples:
 
 ```shell
 # Run linters only
 make lint
 
-# Offline tests only. These are test that don't fetch remote Apio packages.
+# Run offline tests only. These are tests that don't fetch remote Apio packages.
 make test
 
 # Run a single test file with verbose info
@@ -46,13 +47,15 @@ pytest -vv -s test/managers/test_project.py::test_first_env_is_default
 
 > The page `htmlcov/index.html` shows the coverage of the last test run. The directory `htmlcov` is transient and is ignored by git.
 
-## Confirm that the test workflows passed before sending a pull request.
+## Confirm Test Workflow Passes
 
-Each time you commit to your forked apio repo, github runs the apio test workflows with various combination of OS, OS versions, and Python versions. Before sending a pull request to the Apio team, make sure that all the test of your last commit passed. You can find the test results in the `actions` tab of your github repo dashboard.
+Once you are ready to send a pull request from your forked repository, make sure that the test workflow completed successfully. You can find it in the Actions tab of your forked repo.
 
-## Using APIO_DEBUG to print debug information
+> The test workflow tests the `develop` branch, so if you worked on your own branch, merge it with `develop` first.
 
-If the env var `APIO_DEBUG` is defined (regardless of its value), Apio emits internal debugging information that may be useful for debugging.
+## Using `APIO_DEBUG` to Print Debug Information
+
+If the environment variable `APIO_DEBUG` is defined (regardless of its value), Apio emits internal debugging information that may be useful for debugging.
 
 ```
 # Linux and Mac OSX
@@ -62,19 +65,27 @@ export APIO_DEBUG=
 set APIO_DEBUG=
 ```
 
+## Debugging with Visual Studio Code
 
+The `.vscode/launch.json` file contains debugging targets for the Visual Studio Code (VSC) debugger. To use them, make sure that you open the Apio project at its root directory and select the desired VSC debugging target. To customize the targets for your specific needs, click on the Settings icon (wheel) near the debugging target and edit its definition in `launch.json` (do not submit changes to `launch.json` unless they will benefit other developers).
 
+Since Apio launches Scons as a subprocess, **debugging the Scons code requires a different approach** using these steps:
 
-## Running apio in the Visual Studio Code debugger.
+1. Set the environment variable `APIO_SCONS_DEBUGGER` to cause Scons to wait for the debugger (in `apio/scons/SConstruct`).
+2. Set your desired breakpoints in the Scons part of Apio.
+3. From the command line, run the Apio command that invokes the Scons subprocess (e.g., `apio build`).
+4. In the VSC debugger, start the target `Attach remote debugger`.
 
-The `.vscode/launch.json` file contains debugging targets for the Visual Studio Code (VSC) debugger. To use them, make sure that you open the Apio project at its root directory and select the desired VCS debugging target. To customize the targets for your specific need, click on the Settings icon (wheel) near the debugging target and edit it's definition in `launch.json` (do not submit changes to `launch.json` unless they will benefit other developers).
+## Override Remote Config for Testing
 
-Since Apio launches Scons as a subprocess, **debugging the Scons code require a different approach** using these steps:
+Apio retrieves its package information from a remote config `.jsonc` file whose URL is stored in `api/resources/config.jsonc`. For testing, it may be useful to override it and point to an alternative config file. This can be done by defining the `APIO_REMOTE_CONFIG_URL` variable.
 
-1. Set the env var `APIO_SCONS_DEBUGGER` to cause scons waiting for the debugger (in `apio/scons/SConstruct`)
-2. Set your desired breakpoints in the scons part of apio.
-3. From the command line, run the apio command that invokes the scons subprocess (e.g. `apio build`)
-4. In the VSC debugger, start the target `Attach remote debugger`
+Examples:
 
-<br>
+```
+export APIO_REMOTE_CONFIG_URL="https://github.com/FPGAwars/apio/raw/develop/remote-config/apio-{V}.jsonc"
 
+export APIO_REMOTE_CONFIG_URL="file:///projects/apio-dev/repo/remote-config/apio-{V}.jsonc"
+
+export APIO_REMOTE_CONFIG_URL="file:///tmp/my-config-file.jsonc"
+```

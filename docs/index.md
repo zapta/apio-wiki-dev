@@ -60,7 +60,7 @@ example$ tree .
 └── pinout.pcf
 ```
 
-Now let's build the example program our Alhambra-II FPGA board.
+Now let's build the example and program our Alhambra-II FPGA board.
 ```
 example$ apio upload
 ```
@@ -94,9 +94,9 @@ Clock Information
 └─────────┴───────────────────┘
 ```
 
-## Formatting the source code code.
+## Formatting the source code
 
-Formatting the source code is as simple as running `apio format` command.
+Formatting the source code is as simple as running the `apio format` command.
 
 ```
 work2$ apio format
@@ -109,8 +109,8 @@ Processed 2 files.
 
 ## Verifying the source code
 
-The command `apio lint` performs 'nitpicking' verification of the code and report any issue it finds like 
-the one we intentionally created in for this example.
+The command `apio lint` performs 'nitpicking' verification of the code and reports any issues it finds, like 
+the one we intentionally created for this example.
 
 ```
 work2$ apio lint
@@ -126,7 +126,7 @@ Testbench main_tb.v
 
 ## Simulating the design
 
-The command `apio sim` runs a simulation of a selected testbench and shows its result in an interactive graphical windows.
+The command `apio sim` runs a simulation of a selected testbench and shows its result in an interactive graphical window.
 
 ```
 work$ apio sim main_tb.v
@@ -137,7 +137,7 @@ work$ apio sim main_tb.v
 
 ## Testing the design
 
-The command `apio test` simulates all the testbenches in batch mode and fails if any of the assertions failed with
+The command `apio test` simulates all the testbenches in batch mode and fails if any assertions fail with
 a call to `$fatal`.
 
 ```
@@ -150,7 +150,7 @@ main_tb.v:47: $finish called at 966000 (1ps)
 
 ## Commands help
 
-Every apio command access the `--help` or -`h` flag which print a short description of the command. When a command has multiple level, the help flag can be used at any level, for example `apio -h`, `apio examples -h` and `apio examples list -h`. 
+Every apio command accepts the `--help` or `-h` flag, which prints a short description of the command. When a command has multiple levels, the help flag can be used at any level, for example: `apio -h`, `apio examples -h`, and `apio examples list -h`.
 
 ```
 $$ apio clean -h
@@ -169,7 +169,7 @@ Options:
 
 ## Getting additional information
 
-The command `apio info` provide additional information about apio and the system.
+The command `apio info` provides additional information about apio and the system.
 
 For example, let’s get help about the top-module option in the apio.ini project file.
 

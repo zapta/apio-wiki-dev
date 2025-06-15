@@ -1,19 +1,18 @@
-
-
 # Migrating from Apio 0.x.x
 
-Apio 1.x.x introduces many improvements compared to Apio 0.x.x. Many of the changes were done in a backward compatible way but some do require user attention. In this page we outline the main changes from compatibility point of view to help Apio 0.x.x to migrate their projects successfully to Apio 1.x.x.
+Apio 1.x.x introduces many improvements compared to Apio 0.x.x. Many of the changes were done in a backward compatible way, but some do require user attention. On this page, we outline the main changes from a compatibility point of view to help users migrate their projects successfully to Apio 1.x.x.
 
-### Uninstall Apio 0.x.x
-It is recommended to first delete Apio 0.x.x before installing Apio 1.x.x.  The steps to do so are:
+## Uninstall Apio 0.x.x
+
+It is recommended to first delete Apio 0.x.x before installing Apio 1.x.x. The steps to do so are:
 
 1. Delete the Apio Python package `pip uninstall apio`
 
 2. Delete the directory `.apio` under the user home directory. That directory contains packages and other transient files used by Apio.
 
+## Create project file `apio.ini`
 
-### Create project file `apio.ini`
-Apio 1.x.x requires a project file called `apio.ini` in the directory of each Apio project. Make sure your project have a text file called `apio.ini` with the content below, replace *<board>* with the id of your board (e.g. `alhambra-ii`) and replace *<my-module>* with the name of the top Verilog module of your project (e.g. `Blinky`).
+Apio 1.x.x requires a project file called `apio.ini` in the directory of each Apio project. Make sure your project has a text file called `apio.ini` with the content below, replace _<board>_ with the id of your board (e.g. `alhambra-ii`) and replace _<my-module>_ with the name of the top Verilog module of your project (e.g. `Blinky`).
 
 ```
 [env:default]
@@ -21,14 +20,13 @@ board = <board>
 main-module = <my-module>
 ```
 
-### Delete calls to the verilog function $dumpfile().
+## Delete calls to the verilog function `$dumpfile()`.
 
-Remove from your testbenches all calls to the Verilog function `$dumpfile(). The location of the generated simulation files is now automatically controlled by Apio.
+Remove from your testbenches all calls to the Verilog function `$dumpfile()`. The location of the generated simulation files is now automatically controlled by Apio.
 
-### Know the new commands
-The hierarchy and names of some Apio commands where changed in Apio 1.x.x and the table below will help you migrating from the old to the new commands. You can also use the `-h` for detail information on any command level, for example `apio -`, `apio devices -h`, and `apio devices usb -h`.
+## Know the new commands
 
-
+The hierarchy and names of some Apio commands were changed in Apio 1.x.x, and the table below will help you migrate from the old to the new commands. You can also use the `-h` option for detailed information on any command level, for example `apio -h`, `apio devices -h`, and `apio devices usb -h`.
 
 | Apio 0.x.x                   | Apio 1.x.x                  | Comments                     |
 | :--------------------------- | :-------------------------- | :--------------------------- |
@@ -44,7 +42,3 @@ The hierarchy and names of some Apio commands where changed in Apio 1.x.x and th
 | `apio system --lsserial`     | `apio devices serial`       | List serial ports            |
 | `apio time`                  | `apio report`               | Report design timing.        |
 | `apio verify`                | `apio lint`                 | Verify the source code.      |
-
-
-<br>
-

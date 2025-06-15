@@ -2,9 +2,17 @@
     "cSpell.words": [
         "apio",
         "bitstream",
+        "blinkey",
         "FTXYA",
+        "gtkw",
+        "iceprog",
+        "pinout",
+        "Scons",
+        "testbench",
+        "testbenches",
         "usbserial",
         "Verible",
-        "verilog"
+        "verilog",
+        "Yosys"
     ]
 }

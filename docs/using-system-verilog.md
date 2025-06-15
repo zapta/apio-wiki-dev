@@ -1,11 +1,5 @@
+# Using SystemVerilog
 
+You can use SystemVerilog files in your Apio project just like Verilog files. Simply change the file extension from `.v` to `.sv` to indicate that they should be handled as SystemVerilog files. This applies to both synthesizable modules and testbenches.
 
-# Using System Verilog
-
-You can use System Verilog files your Apio project as you would use Verilog files, simply changes the file extension from `.v` to `.sv` to indicate that they should be handled as System Verilog files. This applies to both synthesizable modules and testbenches.
-
-> It's also ok to mix in the same project both Verilog `.v` files and System Verilog `.sv` files.
-
-
-<br>
-
+> It's also okay to mix Verilog `.v` files and SystemVerilog `.sv` files within the same project.

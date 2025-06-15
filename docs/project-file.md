@@ -1,9 +1,7 @@
+# The apio.ini project file
 
-
-# The `apio.ini` project file.
-
-Every Apio project is required to have in its root directory a text 
-file named `apio.ini` that contains the project configuration. At 
+Every Apio project is required to have in its root directory a text
+file named `apio.ini` that contains the project configuration. At
 minimum, the file looks like the example below with a single `env`
 section and the require configuration options.
 
@@ -40,18 +38,17 @@ At runtime, apio select the env to use based using the following rules in decrea
 2. The value of the `default-env` option in the `[apio]` section, if exists.
 3. The first env that is listed in `apio.ini`.
 
-When apio determines the env to use, it collects its options 
+When apio determines the env to use, it collects its options
 from the `[common]` and the [env:name] section, with options in the `[env:name]` section
 having higher priority, and executes the command with the resolved set options.
 
------
+---
 
-## The `[apio]` section
+## The \[apio] section
 
 The `[apio]` section is optional and currently supports the following options
 
-
-#### The `default-env` option
+### The `default-env` option
 
 This is an optional option that species the name of the default env. Without this option, the default option is the first one that is listed in `apio.ini`.
 
@@ -60,27 +57,21 @@ This is an optional option that species the name of the default env. Without thi
 default-env = env2
 ```
 
------
+---
 
-
-## The `[common]` section
+## The \[common\] section
 
 The `[common]` section is optional and supports any option that is also supported by the `[env:name]` sections. Any option defined in the `[common]` section will be shared by all `[env:name]` sections that do not explicitly define that option.
 
------
+---
 
-## The `[env:name]` sections
+## The \[env:name] sections
 
-The `[common]` section is optional and supports any option that is also
-supported by the `[env:name]` sections. Any option defined in the
-`[common]` section is shared by all `[env:name]` sections that do not
-explicitly define that option.
+The `[env:name]` section defines a name build environment and every Apio project should include at least one
+`[env:name]` section. For projects with a single env, it's common to call it `[env:default]`. Following is
+the list of options that can appear in an `[env:name]` section and/or in the `[common]` section.
 
-> A required option must appear in the `[env:name]` section, or in the `[env:common]` or in both.
-
-> For projects with a single env, it's common to call it `[env:default]`.
-
-#### The `board` option (REQUIRED)
+### The `board` option (REQUIRED)
 
 The required `board` option specifies the ID of the board that is used in with this env.
 The board ID must be one of the board IDs that are listed by the command `apio boards` (e.g. `alhambra-ii`).
@@ -90,15 +81,14 @@ The board ID must be one of the board IDs that are listed by the command `apio b
 board = alhambra-ii
 ```
 
-Apio uses the board ID to determine information such as the FPGA part 
-number and the programmer command to use to upload the design to the 
+Apio uses the board ID to determine information such as the FPGA part
+number and the programmer command to use to upload the design to the
 board.
 
-If your project contains a `boards.jsonc` file with custom board defintion, the 
+If your project contains a `boards.jsonc` file with custom board defintion, the
 board ID must be from that file.
 
-
-#### The `default-testbench` option
+### The `default-testbench` option
 
 The optional `default-testbench` option is useful with Apio projects that contain more than one testbench and it allows to specify the testbench that `apio sim` should simulate by default if a no testbench is specified. The value of the option is the relative path
 to the testbench file from the project root dir.
@@ -108,13 +98,13 @@ to the testbench file from the project root dir.
 default-testbench = tests/main_tb.v
 ```
 
-#### The `defines` option
+### The `defines` option
 
-The optional `defines` option allows to specify Verilog macros that are passed 
+The optional `defines` option allows to specify Verilog macros that are passed
 to verilog parsers such as Yosys and Iverilog.
 
 Each macro is specified in a separate lines and the marcors are passed to the
-Verilog parsers as '-D' command lines options. For example the marocs below 
+Verilog parsers as `-D` command lines options. For example the marocs below
 are passed as `-DDEBUG_MODE -D45`.
 
 ```
@@ -138,10 +128,10 @@ defines =
     CLK_DIV=12_000_000
 ```
 
-#### The `format-verible-options` option
+### The `format-verible-options` option
 
-The optional 'format-verible-options' option allows to control the operation 
-of the `apio format` command by specifying additional options to the 
+The optional `format-verible-options` option allows to control the operation
+of the `apio format` command by specifying additional options to the
 underlying Verible formatter.
 
 ```
@@ -154,10 +144,10 @@ format-verible-options =
 For the list of the Verible formatter options, run the command `apio 
 raw -- verible-verilog-format --helpfull`
 
-#### The `programmer-cmd` option
+### The `programmer-cmd` option
 
-he optional 'programmer-cmd' option allows to override the programmer command 
-used by the `apio upload` command. It is intended for special cases and should be 
+he optional `programmer-cmd` option allows to override the programmer command
+used by the `apio upload` command. It is intended for special cases and should be
 avoided if possible.
 
 ```
@@ -166,31 +156,27 @@ avoided if possible.
 ```
 
 > The list of supported placeholders is available in the Apio
-standard boards definitions files `boards.jsonc`.
+> standard boards definitions files `boards.jsonc`.
 
+### The `top-module option` (REQUIRED)
 
-#### The `top-module` option (REQUIRED)
-
-The optional `top-module` option specifies the name of the top module of the 
-design. 
+The optional `top-module` option specifies the name of the top module of the
+design.
 
 ```
 [env:default]
 top-module = Blinky
 ```
 
+### The `yosys-synth-extra-options` option
 
-#### The `yosys-synth-extra-options` option
-
-The optional `yosys-synth-extra-options` option allows adding options to the 
-Yosys synth command used by the `apio build` command. In the example below, it adds the option `-dsp`, 
-which enables on some FPGAs the use of `DSP` cells to implement 
-multiply operations. This is an advanced option that is 
+The optional `yosys-synth-extra-options` option allows adding options to the
+Yosys synth command used by the `apio build` command. In the example below, it adds the option `-dsp`,
+which enables on some FPGAs the use of `DSP` cells to implement
+multiply operations. This is an advanced option that is
 typically not needed.
 
 ```
 [env:default]
 yosys-synth-extra-options = -dsp
 ```
-<br>
-
