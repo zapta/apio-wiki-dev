@@ -16,6 +16,9 @@ on:
 
   workflow_dispatch: # 👈 enables manual trigger via GitHub UI
 
+permissions:
+  contents: write  # 👈 Needed for mkdocs gh-deploy to push
+
 jobs:
   publish:
     runs-on: ubuntu-latest
