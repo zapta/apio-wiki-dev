@@ -1,28 +1,25 @@
+# Creating a New Project
 
+The `apio create` command initializes a new `apio.ini` file. Use it to
+start a new Apio project.
 
-# Apio create
+This command only generates a new `apio.ini` file. To create a full,
+  buildable project, use `apio examples` to fetch a template for your board.
 
-The command `apio create` creates a new `apio.ini` project file and is
-typically used when setting up a new Apio project.
+## EXAMPLES
 
-#### EXAMPLES
 ```
 apio create --board alhambra-ii
 apio create --board alhambra-ii --top-module MyModule
 ```
 
-#### OPTIONS
+## OPTIONS
+
 ```
--b, --board BOARD       Set the board.  [required]
--t, --top-module name   Set the top level module name.
--p, --project-dir path  Set the root directory for the project.
--h, --help              Show this message and exit.
+-b, --board BOARD        Specify the target board. [required]
+-t, --top-module name    Set the top-level module name.
+-p, --project-dir path   Specify the project root directory.
+-h, --help               Show help message and exit.
 ```
 
-#### NOTES
-* This command only creates a new `apio.ini` file, rather than a
-complete and buildable project. To create a complete project, use the 
-`apio examples` command to fetch an example project for your board.
-
-<br>
 
