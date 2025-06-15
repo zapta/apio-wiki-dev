@@ -6,10 +6,11 @@ name: publish-docs
 on:
   push:
     branches:
-      - main
+      - develop
     paths:
       - "docs/**"
       - "mkdocs.yml"
+      - '.github/workflows/publish-docs.yaml'
 
   schedule:
     - cron: "0 * * * *" # Every hour at minute 0
