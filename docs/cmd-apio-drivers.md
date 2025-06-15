@@ -1,16 +1,15 @@
-
-
 # Apio drivers
 
-The command group `apio drivers` contains subcommands to manage the
-drivers on your system.
+The `apio drivers` command group installs and uninstalls drivers needed by some FPGA boards.
 
-#### OPTIONS
+## OPTIONS
+
 ```
 -h, --help  Show this message and exit.
 ```
 
-#### SUBCOMMANDS
+## SUBCOMMANDS
+
 ```
 apio drivers install ftdi
 apio drivers uninstall ftdi
@@ -18,80 +17,75 @@ apio drivers uninstall ftdi
 apio drivers install serial
 apio drivers uninstall serial
 ```
-<br>
 
------
+---
 
 # Apio drivers install ftdi
 
-The command `apio drivers install ftdi` installs on your system the
-FTDI drivers required by some FPGA boards.
+The `apio drivers install ftdi` command installs the FTDI drivers required by some FPGA boards.
 
-#### EXAMPLES
+## EXAMPLES
+
 ```
 apio drivers install ftdi
 ```
-#### OPTIONS
+
+## OPTIONS
+
 ```
 -h, --help  Show this message and exit.
 ```
 
-<br>
-
------
+---
 
 # Apio drivers uninstall ftdi
 
-The command `apio drivers uninstall ftdi` removes the FTDI drivers
-that may have been installed earlier.
+The `apio drivers uninstall ftdi` command removes previously installed FTDI drivers.
 
-#### EXAMPLES
+## EXAMPLES
+
 ```
-apio drivers uninstall ftdi   # Uninstall the ftdi drivers.
+apio drivers uninstall ftdi   # Uninstall FTDI drivers.
 ```
 
-#### OPTIONS
+## OPTIONS
+
 ```
 -h, --help  Show this message and exit.
 ```
 
-<br>
-
------
+---
 
 # Apio drivers install serial
 
-The command `apio drivers install serial` installs the necessary
-serial drivers on your system, as required by certain FPGA boards.
+The `apio drivers install serial` command installs the serial drivers needed by certain FPGA boards.
 
-#### EXAMPLES
+## EXAMPLES
+
 ```
-apio drivers install serial  # Install the serial drivers.
+apio drivers install serial  # Install serial drivers.
 ```
 
-#### OPTIONS
+## OPTIONS
+
 ```
 -h, --help  Show this message and exit.
 ```
 
-<br>
-
------
+---
 
 # Apio drivers uninstall serial
 
-The command `apio drivers uninstall serial` removes the serial drivers
-that you may have installed earlier.
+The `apio drivers uninstall serial` command removes previously installed serial drivers.
 
-#### EXAMPLES
+## EXAMPLES
+
 ```
-apio drivers uninstall serial    # Uninstall the serial drivers.
+apio drivers uninstall serial    # Uninstall serial drivers.
 ```
 
-#### OPTIONS
+## OPTIONS
+
 ```
 -h, --help  Show this message and exit.
 ```
-
-<br>
-

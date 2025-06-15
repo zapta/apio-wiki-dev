@@ -112,7 +112,7 @@
 /* Spacing before and after an horizontal line */
 .md-typeset hr {
   margin-top: 4em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 /* Space at the bottom of each page */
