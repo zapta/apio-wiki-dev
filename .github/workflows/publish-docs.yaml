@@ -5,8 +5,6 @@ name: publish-docs
 
 on:
   push:
-    branches:
-      - develop
     paths:
       - "docs/**"
       - "mkdocs.yml"
@@ -45,10 +43,8 @@ jobs:
       - name: Deploy to GitHub Pages
         # Push also if no change.
         run: |
-          mkdocs gh-deploy --force
+          mkdocs gh-deploy --force | tee >> $GITHUB_STEP_SUMMARY
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Add summary with published URL
-        run: |
-          echo "📘 Docs published at: [https://${GITHUB_REPOSITORY}.github.io](https://${GITHUB_REPOSITORY}.github.io)" >> $GITHUB_STEP_SUMMARY
+      
