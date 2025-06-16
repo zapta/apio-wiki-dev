@@ -8,7 +8,7 @@
 - `apio sim` – to simulate the design
 - `apio upload` – to build the design and program the FPGA board
 
-Apio runs on macOS, Linux, and Windows. It currently supports:
+Apio runs on macOS, Linux, and Windows, and currently supports:
 
 - 3 FPGA architectures
 - 70+ FPGAs
