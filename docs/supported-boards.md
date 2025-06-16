@@ -1,6 +1,8 @@
+<!-- BEGIN generation by 'apio boards --docs' -->
+
 # Supported FPGA Boards
 
-> Generated on June 5, 2025. For the complete list run `apio boards`.
+> Generated on June 15, 2025. For the updated list run `apio boards`.
 
 > Custom board definitions can be added in the project directory.
 
@@ -97,3 +99,5 @@
 | sipeed-tang-nano-20k | 20k  | Sipeed Tang Nano 20k | GW2AR-LV18QN88C8/I7   |
 | sipeed-tang-nano-4k  | 4k   | Sipeed Tang Nano 4k  | GW1NSR-LV4CQN48PC7/I6 |
 | sipeed-tang-nano-9k  | 9k   | Sipeed Tang Nano 9k  | GW1NR-LV9QN88PC6/I5   |
+
+<!-- END generation by 'apio boards --docs' -->
