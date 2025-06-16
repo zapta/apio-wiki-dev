@@ -5,21 +5,25 @@ name: publish-docs
 
 on:
   push:
+    # Only doc related files.
     paths:
       - "docs/**"
       - "mkdocs.yml"
       - ".github/workflows/publish-docs.yaml"
 
   schedule:
-    - cron: "0 * * * *" # Every hour at minute 0
+    # Every day at 10:00 UTC
+    - cron: "0 10 * * *"
 
-  workflow_dispatch: # 👈 enables manual trigger via GitHub UI
+  # enables manual trigger via GitHub UI
+  workflow_dispatch:
 
 permissions:
-  contents: write # 👈 Needed for mkdocs gh-deploy to push
+  #  Needed for mkDocs gh-deploy to push
+  contents: write
 
 jobs:
-  publish:
+  publish-docs:
     runs-on: ubuntu-latest
 
     steps:
@@ -29,7 +33,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.13"
 
       - name: Install dependencies
         run: |
@@ -43,9 +47,7 @@ jobs:
       - name: Deploy to GitHub Pages
         # Push also if no change.
         run: |
-          # set -x
-          # echo '```' >> $GITHUB_STEP_SUMMARY
+          # Capture both stderr and stdout.
           mkdocs gh-deploy --force 2>&1 | tee >> $GITHUB_STEP_SUMMARY
-          # echo '```' >> $GITHUB_STEP_SUMMARY
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
