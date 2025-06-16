@@ -45,7 +45,7 @@ pytest -vv -s test/managers/test_project.py
 pytest -vv -s test/managers/test_project.py::test_first_env_is_default
 ```
 
-> The page `htmlcov/index.html` shows the coverage of the last test run. The directory `htmlcov` is transient and is ignored by git.
+> The page `_pytest-coverage/index.html` shows the coverage of the last test run. The directory `_pytest-coverage` is transient and is ignored by git.
 
 ## Confirm Test Workflow Passes
 
